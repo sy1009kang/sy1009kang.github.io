@@ -7,8 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-
-======
 I am a Ph.D. candidate at KAIST UVR Lab, specializing in avatar-mediated communication and empathic computing for AR/VR. As an HCI researcher, I aim to gain deep insights into how humans perceive and communicate within the evolving AR/VR landscape to drive technological advancements that enhance human communication and experiences.
 
 🚀 Recent & Upcoming News
