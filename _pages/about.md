@@ -11,9 +11,10 @@ redirect_from:
 ======
 I am a Ph.D. candidate at KAIST UVR Lab, specializing in avatar-mediated communication and empathic computing for AR/VR. As an HCI researcher, I aim to gain deep insights into how humans perceive and communicate within the evolving AR/VR landscape to drive technological advancements that enhance human communication and experiences.
 
-Site-wide configuration
+🚀 Recent & Upcoming News
 ------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+**March 2026**: I will be attending **IEEE VR 2026** to present my latest research. I am proud to share that **three of our papers** (1 first author, 2 co-author papers) will be published in **IEEE TVCG** and presented at the conference:
+**May 2026**: Looking forward to my **PhD Defense**! More details on the public presentation will be shared soon.
 
 Create content & metadata
 ------
