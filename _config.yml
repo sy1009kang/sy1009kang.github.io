@@ -5,9 +5,9 @@ title                    : "S. Kang | HCI & Immersive Tech"
 title_separator          : "-"
 name                     : &name "Seoyoung Kang" # 성함에 맞춰 수정하세요
 description              : &description "Postdoctoral Researcher in HCI, Avatars, and Immersive Technologies"
-url                      : "https:sy1009kang.github.io/sykang.github.io/" # 본인 도메인으로 수정됨
+url                      : "https://sy1009kang.github.io" # 본인 도메인으로 수정됨
 baseurl                  : "" # 유저네임 레포지토리이므로 비워둡니다
-repository               : "sy1009kang/skang.github.io"
+repository               : "sy1009kang/sy1009kang.github.io"
 
 # Site Author
 author:
