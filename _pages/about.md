@@ -11,6 +11,8 @@ I am a Ph.D. candidate at KAIST UVR Lab, specializing in avatar-mediated communi
 
 🚀 Recent & Upcoming News
 ------
+📚**December 2025 – April 2026**: I will be conducting a collaborative research project with Prof. Yalong Yang at the School of Computing, Georgia Institute of Technology.
+
 📚**March 2026**: I will be attending **IEEE VR 2026** to present my latest research. I am proud to share that **three of our papers** (1 first author, 2 co-author papers) will be published in **IEEE TVCG** and presented at the conference.
 
 📚**May 2026**: Looking forward to my **PhD Defense**! More details on the public presentation will be shared soon.
