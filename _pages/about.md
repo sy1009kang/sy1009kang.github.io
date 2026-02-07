@@ -2,26 +2,97 @@
 permalink: /
 title: "About Me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a Ph.D. candidate at KAIST UVR Lab, specializing in avatar-mediated communication and empathic computing for AR/VR. As an HCI researcher, I aim to gain deep insights into how humans perceive and communicate within the evolving AR/VR landscape to drive technological advancements that enhance human communication and experiences.
+<div class="research-container">
 
-🚀 Recent & Upcoming News
-------
-📚**December 2025 – April 2026**: I will be conducting a collaborative research project with Prof. Yalong Yang at the School of Interactive Computing, Georgia Institute of Technology.
+<div class="research-intro">
+  <p>
+    I am a Ph.D. candidate at <strong>KAIST</strong> (Ubiquitous Virtual Reality Lab), specializing in
+    <strong>avatar-mediated communication</strong> and <strong>empathic computing</strong> for AR/VR.
+    My work investigates how people perceive and communicate through avatars, and how we can design
+    expressive, trustworthy, and socially effective avatar behaviors—especially in <strong>asynchronous</strong>
+    and mediated XR scenarios.
+  </p>
 
-📚**March 2026**: I will be attending **IEEE VR 2026** to present my latest research. I am proud to share that **three of our papers** (1 first author, 2 co-author papers) will be published in **IEEE TVCG** and presented at the conference.
+  <p>
+    <span class="pub-tag oral">XR / HCI</span>
+    <span class="pub-tag oral">Avatars</span>
+    <span class="pub-tag oral">Social Presence</span>
+    <span class="pub-tag oral">Asynchronous Communication</span>
+    <span class="pub-tag oral">LLM-mediated Behavior</span>
+  </p>
 
-📚**May 2026**: Looking forward to my **PhD Defense**! More details on the public presentation will be shared soon.
+  <p>
+    {% if site.author.googlescholar %}
+      <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>
+    {% endif %}
+    {% if site.author.github %}
+      · <a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
+    {% endif %}
+    {% if site.author.email %}
+      · <a href="mailto:{{ site.author.email }}">Email</a>
+    {% endif %}
+  </p>
+</div>
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+<div class="section-header">
+  <h2>🚀 Recent & Upcoming</h2>
+</div>
 
-**Markdown generator**
+<div class="pub-entry">
+  <p class="pub-authors">
+    <span class="pub-year">Dec 2025 – Apr 2026</span>
+    Visiting Researcher at <strong>Georgia Institute of Technology</strong> (School of Interactive Computing),
+    collaborating with <strong>Prof. Yalong Yang</strong>.
+  </p>
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+  <p class="pub-authors">
+    <span class="pub-year">Mar 2026</span>
+    Presenting at <strong>IEEE VR 2026</strong>.
+    Three papers (1 first-author, 2 co-author) will be published in <strong>IEEE TVCG</strong> and presented at the conference.
+  </p>
+
+  <p class="pub-authors">
+    <span class="pub-year">May 2026</span>
+    <strong>Ph.D. Defense</strong> (details for the public talk will be announced soon).
+  </p>
+</div>
+
+<div class="section-header">
+  <h2>🔍 Research Snapshot</h2>
+</div>
+
+<div class="pub-entry">
+  <p class="pub-authors"><strong>Theme:</strong> Balancing identity consistency with communicative appropriateness in avatar behavior.</p>
+  <p class="pub-authors">
+    In real-world XR communication, users care about both <em>“Does this feel like me?”</em> and
+    <em>“Does this behave appropriately in context?”</em> My research develops interaction paradigms and
+    adaptive facial behavior generation techniques that preserve personal style while supporting socially effective communication.
+  </p>
+
+  <ul class="subbullets">
+    <li><strong>Asynchronous self-avatars:</strong> modeling identity, agency, and adoption when users view their avatars from a third-person perspective.</li>
+    <li><strong>Expressive facial animation:</strong> prioritizing critical blendshapes and communicative intent to improve social presence.</li>
+    <li><strong>Evaluation:</strong> combining computational metrics and user perception measures (realism, plausibility, self-identification, trust, intention to use).</li>
+  </ul>
+</div>
+
+<div class="section-header">
+  <h2>📌 Selected Links</h2>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-links">
+    <a class="pub-link" href="{{ '/publications/' | relative_url }}">📄 Publications</a>
+    <a class="pub-link" href="{{ '/cv/' | relative_url }}">🧾 CV</a>
+    {% if site.author.googlescholar %}
+      <a class="pub-link" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">🎓 Google Scholar</a>
+    {% endif %}
+  </div>
+</div>
+
+</div>
