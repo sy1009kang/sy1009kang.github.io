@@ -1,3 +1,4 @@
+```markdown
 ---
 permalink: /
 title: "About Me"
@@ -22,8 +23,8 @@ redirect_from:
     <span class="pub-tag oral">XR / HCI</span>
     <span class="pub-tag oral">Avatars</span>
     <span class="pub-tag oral">Social Presence</span>
-    <span class="pub-tag oral">Asynchronous Communication</span>
-    <span class="pub-tag oral">LLM-mediated Behavior</span>
+    <span class="pub-tag oral">Communication</span>
+    <span class="pub-tag oral">Embodiment</span>
   </p>
 
   <p>
@@ -67,17 +68,26 @@ redirect_from:
 </div>
 
 <div class="pub-entry">
-  <p class="pub-authors"><strong>Theme:</strong> Balancing identity consistency with communicative appropriateness in avatar behavior.</p>
+  <p class="pub-authors"><strong>Theme:</strong> Understanding and designing human communication in immersive XR.</p>
+
   <p class="pub-authors">
-    In real-world XR communication, users care about both <em>“Does this feel like me?”</em> and
-    <em>“Does this behave appropriately in context?”</em> My research develops interaction paradigms and
-    adaptive facial behavior generation techniques that preserve personal style while supporting socially effective communication.
+    My research lies at the intersection of <strong>human–computer interaction</strong>, <strong>immersive XR systems</strong>,
+    and <strong>social computing</strong>. I study how people <em>perceive</em>, <em>interpret</em>, and <em>trust</em> digital
+    representations of others, and how we can design avatar-mediated systems that support natural, meaningful, and socially appropriate
+    communication beyond physical co-presence.
+  </p>
+
+  <p class="pub-authors">
+    More broadly, I aim to develop interaction techniques and design guidance that enhance <strong>social presence</strong>,
+    <strong>communication quality</strong>, and <strong>user agency</strong> in future XR platforms—grounded in user-centered
+    experimentation and system building.
   </p>
 
   <ul class="subbullets">
-    <li><strong>Asynchronous self-avatars:</strong> modeling identity, agency, and adoption when users view their avatars from a third-person perspective.</li>
-    <li><strong>Expressive facial animation:</strong> prioritizing critical blendshapes and communicative intent to improve social presence.</li>
-    <li><strong>Evaluation:</strong> combining computational metrics and user perception measures (realism, plausibility, self-identification, trust, intention to use).</li>
+    <li><strong>Avatar-mediated communication:</strong> embodiment, nonverbal cues, and social presence in VR/AR.</li>
+    <li><strong>Human perception in XR:</strong> identity, agency, trust, and social connection with virtual representations.</li>
+    <li><strong>Interaction design:</strong> creating expressive and reliable avatar behaviors that adapt to context and task needs.</li>
+    <li><strong>Evaluation:</strong> rigorous user studies and mixed-method approaches to assess social and experiential outcomes.</li>
   </ul>
 </div>
 
@@ -96,3 +106,4 @@ redirect_from:
 </div>
 
 </div>
+```
