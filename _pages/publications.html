@@ -1,135 +1,235 @@
-/* ===== Publications / Research page (CV-aligned) ===== */
-.research-container {
-  max-width: 850px; /* CV와 동일한 폭감 */
-  margin: 0 auto;
+---
+layout: archive
+title: "Research"
+permalink: /publications/
+author_profile: true
+---
+
+{% include base_path %}
+
+<style>
+.pub-section { margin-top: 1.75rem; }
+.pub-section h2 { margin-bottom: .75rem; padding-bottom: .35rem; border-bottom: 1px solid #eee; }
+
+.pub-item { 
+  display: flex; 
+  justify-content: space-between; 
+  gap: 1rem; 
+  margin: .9rem 0; 
+  padding-bottom: .9rem;
+  border-bottom: 1px solid #f5f5f5;
 }
 
-/* Intro: CV 느낌의 card + left bar */
-.research-intro {
-  margin: 0 0 2rem 0;
-  padding: 1.5rem;
-  background: #f9f9f9;
-  border-left: 3px solid #333;
-  border-radius: 3px;
+.pub-item:last-child {
+  border-bottom: none;
 }
 
-.research-intro p {
-  margin: 0 0 1rem 0;
-  line-height: 1.6;
-  color: #555;
-}
-.research-intro p:last-child { margin-bottom: 0; }
+.pub-left { flex: 1; }
+.pub-right { white-space: nowrap; color: #666; font-size: 0.9em; }
 
-.research-intro a {
-  color: #333;
-  text-decoration: none;
-  border-bottom: 1px solid #333;
-}
-.research-intro a:hover {
-  border-bottom: 2px solid #333;
-}
-
-/* Section headers: CV 섹션 헤더와 동일한 톤 */
-.section-header {
-  margin: 2.5rem 0 1.25rem 0;
-  padding-bottom: .35rem;
-  border-bottom: 1px solid #eee;
-}
-.section-header h2 {
-  margin: 0;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #222;
-}
-
-/* Publication entries: CV의 얇은 구분선 느낌 */
-.pub-entry {
-  margin-bottom: 1.6rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid #f0f0f0;
-}
-.pub-entry:last-child { border-bottom: none; }
-
-/* Title */
-.pub-title {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #222;
-  margin: 0 0 .45rem 0;
+.pub-title { 
+  font-weight: 600; 
   line-height: 1.4;
-}
-.pub-title a {
-  color: #222;
-  text-decoration: none;
-}
-.pub-title a:hover {
-  color: #000;
-  text-decoration: underline;
+  margin-bottom: .3rem;
 }
 
-/* Authors / venue */
-.pub-authors {
-  font-size: .95rem;
-  color: #555;
+.pub-title a { 
+  color: #222; 
+  text-decoration: none; 
+}
+
+.pub-title a:hover { 
+  text-decoration: underline; 
+}
+
+.pub-authors { 
+  color: #555; 
   margin: .2rem 0;
+  font-size: 0.95em;
 }
-.pub-authors .me { font-weight: 700; }
 
-.pub-venue {
-  font-size: .92rem;
-  color: #777;
-  font-style: italic;
+.pub-authors .me { 
+  font-weight: 600; 
+}
+
+.pub-venue { 
+  color: #777; 
+  font-style: italic; 
   margin: .2rem 0;
+  font-size: 0.9em;
 }
 
-/* Meta badges: CV의 .badge와 동일한 스타일로 통일 */
-.pub-meta { margin-top: .75rem; font-size: .85rem; }
-
-.pub-year,
-.pub-tag {
-  display: inline-block;
-  padding: .15rem .5rem;
-  border: 1px solid #ddd;
-  border-radius: 999px;
-  font-size: .85em;
-  color: #444;
-  margin-right: .35rem;
-  background: #fff;
+.pub-links { 
+  margin-top: .5rem; 
 }
 
-.pub-year { background: #f5f5f5; color: #666; }
-
-/* award / presentation도 같은 badge 룩 유지 (색만 살짝) */
-.pub-tag.award {
-  background: #fff3cd;
-  color: #856404;
-  border-color: #ffeeba;
-}
-.pub-tag.oral {
-  background: #d4edda;
-  color: #155724;
-  border-color: #c3e6cb;
-}
-
-/* Links: CV 느낌의 버튼(각진 3px, 회색 배경) */
-.pub-links { margin-top: .75rem; }
-
-.pub-link {
+.pub-link { 
   display: inline-block;
   margin-right: .6rem;
-  margin-bottom: .5rem;
-  padding: .3rem .8rem;
+  padding: .2rem .6rem;
   background: #f5f5f5;
   color: #333;
   text-decoration: none;
   border-radius: 3px;
-  font-size: .85rem;
-  transition: background .2s;
+  font-size: 0.85em;
 }
-.pub-link:hover { background: #e5e5e5; }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .section-header h2 { font-size: 1.15rem; }
-  .pub-link { margin-right: .5rem; }
+.pub-link:hover { 
+  background: #e5e5e5; 
 }
+
+.badge-award { 
+  display: inline-block; 
+  padding: .15rem .5rem; 
+  background: #fff3cd; 
+  color: #856404; 
+  border-radius: 3px; 
+  font-size: .8em; 
+  margin-left: .4rem;
+}
+
+.badge-oral { 
+  display: inline-block; 
+  padding: .15rem .5rem; 
+  background: #d4edda; 
+  color: #155724; 
+  border-radius: 3px; 
+  font-size: .8em; 
+  margin-left: .4rem;
+}
+
+.intro-note {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-left: 3px solid #333;
+  color: #555;
+  line-height: 1.6;
+}
+
+.intro-note a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+.intro-note a:hover {
+  border-bottom: 2px solid #333;
+}
+
+@media (max-width: 768px) {
+  .pub-item { flex-direction: column; gap: .3rem; }
+  .pub-right { white-space: normal; }
+}
+</style>
+
+<!-- Introduction -->
+<div class="intro-note">
+  My research focuses on XR/VR technologies, human-computer interaction, and immersive collaboration systems.
+  {% if site.author.googlescholar %}
+  <br><a href="{{site.author.googlescholar}}" target="_blank">→ View full publication list on Google Scholar</a>
+  {% endif %}
+</div>
+
+<!-- Publications by Category -->
+{% if site.publication_category %}
+  {% for category in site.publication_category %}
+    {% assign title_shown = false %}
+    
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      
+      {% unless title_shown %}
+        <div class="pub-section">
+          <h2>{{ category[1].title }}</h2>
+        {% assign title_shown = true %}
+      {% endunless %}
+      
+      <!-- Publication Item -->
+      <div class="pub-item">
+        <div class="pub-left">
+          <div class="pub-title">
+            {% if post.paperurl %}
+              <a href="{{ post.paperurl }}" target="_blank">{{ post.title }}</a>
+            {% else %}
+              {{ post.title }}
+            {% endif %}
+            {% if post.award %}<span class="badge-award">🏆 {{ post.award }}</span>{% endif %}
+            {% if post.presentation %}<span class="badge-oral">🎤 {{ post.presentation }}</span>{% endif %}
+          </div>
+          
+          {% if post.authors %}
+          <div class="pub-authors">{{ post.authors | replace: "Your Name", "<span class='me'>Your Name</span>" }}</div>
+          {% endif %}
+          
+          {% if post.venue %}
+          <div class="pub-venue">{{ post.venue }}</div>
+          {% endif %}
+          
+          {% if post.paperurl or post.pdf or post.code or post.video or post.slides or post.dataset %}
+          <div class="pub-links">
+            {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>{% endif %}
+            {% if post.pdf %}<a href="{{ post.pdf }}" class="pub-link" target="_blank">PDF</a>{% endif %}
+            {% if post.code %}<a href="{{ post.code }}" class="pub-link" target="_blank">Code</a>{% endif %}
+            {% if post.video %}<a href="{{ post.video }}" class="pub-link" target="_blank">Video</a>{% endif %}
+            {% if post.slides %}<a href="{{ post.slides }}" class="pub-link" target="_blank">Slides</a>{% endif %}
+            {% if post.dataset %}<a href="{{ post.dataset }}" class="pub-link" target="_blank">Dataset</a>{% endif %}
+          </div>
+          {% endif %}
+        </div>
+        
+        {% if post.date %}
+        <div class="pub-right">{{ post.date | date: "%Y" }}</div>
+        {% endif %}
+      </div>
+    {% endfor %}
+    
+    {% if title_shown %}
+        </div>
+    {% endif %}
+  {% endfor %}
+  
+{% else %}
+  <!-- If no categories, show all publications -->
+  <div class="pub-section">
+    <h2>📄 Publications</h2>
+    
+    {% for post in site.publications reversed %}
+      <div class="pub-item">
+        <div class="pub-left">
+          <div class="pub-title">
+            {% if post.paperurl %}
+              <a href="{{ post.paperurl }}" target="_blank">{{ post.title }}</a>
+            {% else %}
+              {{ post.title }}
+            {% endif %}
+            {% if post.award %}<span class="badge-award">🏆 {{ post.award }}</span>{% endif %}
+            {% if post.presentation %}<span class="badge-oral">🎤 {{ post.presentation }}</span>{% endif %}
+          </div>
+          
+          {% if post.authors %}
+          <div class="pub-authors">{{ post.authors }}</div>
+          {% endif %}
+          
+          {% if post.venue %}
+          <div class="pub-venue">{{ post.venue }}</div>
+          {% endif %}
+          
+          {% if post.paperurl or post.code or post.video %}
+          <div class="pub-links">
+            {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>{% endif %}
+            {% if post.code %}<a href="{{ post.code }}" class="pub-link" target="_blank">Code</a>{% endif %}
+            {% if post.video %}<a href="{{ post.video }}" class="pub-link" target="_blank">Video</a>{% endif %}
+          </div>
+          {% endif %}
+        </div>
+        
+        {% if post.date %}
+        <div class="pub-right">{{ post.date | date: "%Y" }}</div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
