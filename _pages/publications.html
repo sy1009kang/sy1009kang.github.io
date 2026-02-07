@@ -5,32 +5,733 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<style>
+/* Research Page Styles */
+.research-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.research-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.research-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.research-intro {
+  font-size: 1rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.scholar-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.scholar-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Research Metrics */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.metric-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-top: 4px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.metric-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.metric-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #667eea;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 12px;
+}
+
+.filter-tab {
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #4a5568;
+  transition: all 0.3s ease;
+}
+
+.filter-tab:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.filter-tab.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+/* Section Headers */
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 3rem 0 1.5rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #667eea;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+}
+
+.category-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.category-count {
+  margin-left: auto;
+  padding: 0.25rem 0.75rem;
+  background: #edf2f7;
+  color: #4a5568;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Publication Cards */
+.publication-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.publication-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s ease;
+}
+
+.publication-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  transform: translateX(4px);
+}
+
+.publication-card:hover::before {
+  width: 8px;
+}
+
+.pub-year {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #667eea;
+  background: #f0f4ff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.pub-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.5;
+  padding-right: 5rem;
+}
+
+.pub-title a {
+  color: #2d3748;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.pub-title a:hover {
+  color: #667eea;
+}
+
+.pub-authors {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.pub-authors .author-me {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.pub-venue {
+  font-size: 0.9rem;
+  color: #718096;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.pub-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.pub-tag {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.pub-tag.award {
+  background: #fef5e7;
+  border-color: #f9e79f;
+  color: #975a16;
+}
+
+.pub-tag.oral {
+  background: #e8f5e9;
+  border-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #edf2f7;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 1rem;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.pub-link:hover {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+.pub-link-icon {
+  font-size: 1rem;
+}
+
+/* Abstract Toggle */
+.abstract-toggle {
+  margin-top: 1rem;
+  cursor: pointer;
+  color: #667eea;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.abstract-toggle:hover {
+  text-decoration: underline;
+}
+
+.abstract-content {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #4a5568;
+  border-left: 3px solid #667eea;
+}
+
+.abstract-content.show {
+  display: block;
+}
+
+/* Timeline View Option */
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #667eea;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #667eea;
+}
+
+/* Research Interests */
+.research-interests {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.interest-item {
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  border-left: 3px solid #667eea;
+  font-size: 0.95rem;
+  color: #4a5568;
+  transition: all 0.3s ease;
+}
+
+.interest-item:hover {
+  background: #edf2f7;
+  transform: translateX(4px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .filter-tabs {
+    gap: 0.5rem;
+  }
+  
+  .filter-tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .pub-year {
+    position: static;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pub-title {
+    padding-right: 0;
+    font-size: 1rem;
+  }
+  
+  .research-header h1 {
+    font-size: 1.5rem;
+  }
+}
+</style>
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
+<div class="research-container">
+
+<!-- Research Header -->
+<div class="research-header">
+  <h1>Research Publications</h1>
+  <p class="research-intro">
+    My research focuses on XR/VR technologies, human-computer interaction, and immersive collaboration systems. 
+    I explore innovative ways to enhance human experiences through virtual and augmented reality.
+  </p>
+  {% if site.author.googlescholar %}
+  <a href="{{site.author.googlescholar}}" class="scholar-link" target="_blank">
+    <span>🎓</span>
+    <span>View Full Profile on Google Scholar</span>
+  </a>
+  {% endif %}
+</div>
+
+<!-- Research Metrics -->
+<div class="metrics-grid">
+  <div class="metric-card">
+    <span class="metric-icon">📄</span>
+    <span class="metric-number">{{ site.publications | size }}</span>
+    <span class="metric-label">Publications</span>
+  </div>
+  <div class="metric-card">
+    <span class="metric-icon">📚</span>
+    <span class="metric-number">-</span>
+    <span class="metric-label">Citations</span>
+  </div>
+  <div class="metric-card">
+    <span class="metric-icon">📈</span>
+    <span class="metric-number">-</span>
+    <span class="metric-label">h-index</span>
+  </div>
+</div>
+
+<!-- Research Interests -->
+<div class="research-interests">
+  <h3 style="margin: 0 0 1rem 0; color: #2d3748;">🔬 Research Interests</h3>
+  <div class="interests-grid">
+    <div class="interest-item">Virtual & Augmented Reality</div>
+    <div class="interest-item">Human-Computer Interaction</div>
+    <div class="interest-item">Immersive Collaboration</div>
+    <div class="interest-item">Social VR Systems</div>
+    <div class="interest-item">XR Standards & Interoperability</div>
+    <div class="interest-item">Embodied Interaction</div>
+  </div>
+</div>
+
+<!-- Filter Tabs (Optional - can be activated with JavaScript) -->
+<!-- 
+<div class="filter-tabs">
+  <div class="filter-tab active" data-filter="all">All Publications</div>
+  <div class="filter-tab" data-filter="journal">Journal Articles</div>
+  <div class="filter-tab" data-filter="conference">Conference Papers</div>
+  <div class="filter-tab" data-filter="workshop">Workshops</div>
+</div>
+-->
+
+<!-- Publications by Category -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
+    {% assign category_count = 0 %}
+    
+    <!-- Count publications in this category -->
+    {% for post in site.publications reversed %}
+      {% if post.category == category[0] %}
+        {% assign category_count = category_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
+      
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
+        <div class="category-header">
+          {% if category[0] == 'journal' %}
+            <span class="category-icon">📚</span>
+          {% elsif category[0] == 'conference' %}
+            <span class="category-icon">🎤</span>
+          {% elsif category[0] == 'workshop' %}
+            <span class="category-icon">🛠️</span>
+          {% else %}
+            <span class="category-icon">📄</span>
+          {% endif %}
+          <h2>{{ category[1].title }}</h2>
+          <span class="category-count">{{ category_count }}</span>
+        </div>
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      
+      <!-- Publication Card -->
+      <div class="publication-card">
+        {% if post.date %}
+        <span class="pub-year">{{ post.date | date: "%Y" }}</span>
+        {% endif %}
+        
+        <h3 class="pub-title">
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}" target="_blank">{{ post.title }}</a>
+          {% else %}
+            {{ post.title }}
+          {% endif %}
+        </h3>
+        
+        {% if post.authors %}
+        <div class="pub-authors">
+          {{ post.authors | replace: "Your Name", "<span class='author-me'>Your Name</span>" }}
+        </div>
+        {% endif %}
+        
+        {% if post.venue %}
+        <div class="pub-venue">{{ post.venue }}</div>
+        {% endif %}
+        
+        <!-- Tags -->
+        <div class="pub-tags">
+          {% if post.award %}
+            <span class="pub-tag award">🏆 {{ post.award }}</span>
+          {% endif %}
+          {% if post.presentation %}
+            <span class="pub-tag oral">🎤 {{ post.presentation }}</span>
+          {% endif %}
+          {% if post.tags %}
+            {% for tag in post.tags %}
+              <span class="pub-tag">{{ tag }}</span>
+            {% endfor %}
+          {% endif %}
+        </div>
+        
+        <!-- Links -->
+        <div class="pub-links">
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}" class="pub-link" target="_blank">
+              <span class="pub-link-icon">📄</span>
+              <span>Paper</span>
+            </a>
+          {% endif %}
+          {% if post.pdf %}
+            <a href="{{ post.pdf }}" class="pub-link" target="_blank">
+              <span class="pub-link-icon">📥</span>
+              <span>PDF</span>
+            </a>
+          {% endif %}
+          {% if post.code %}
+            <a href="{{ post.code }}" class="pub-link" target="_blank">
+              <span class="pub-link-icon">💻</span>
+              <span>Code</span>
+            </a>
+          {% endif %}
+          {% if post.video %}
+            <a href="{{ post.video }}" class="pub-link" target="_blank">
+              <span class="pub-link-icon">🎥</span>
+              <span>Video</span>
+            </a>
+          {% endif %}
+          {% if post.slides %}
+            <a href="{{ post.slides }}" class="pub-link" target="_blank">
+              <span class="pub-link-icon">📊</span>
+              <span>Slides</span>
+            </a>
+          {% endif %}
+          {% if post.dataset %}
+            <a href="{{ post.dataset }}" class="pub-link" target="_blank">
+              <span class="pub-link-icon">💾</span>
+              <span>Dataset</span>
+            </a>
+          {% endif %}
+        </div>
+        
+        {% if post.excerpt %}
+        <div class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('show')">
+          <span>📖 Abstract</span>
+          <span style="font-size: 0.7rem;">▼</span>
+        </div>
+        <div class="abstract-content">
+          {{ post.excerpt }}
+        </div>
+        {% endif %}
+      </div>
     {% endfor %}
   {% endfor %}
+  
 {% else %}
+  <!-- If no categories, show all publications -->
+  <div class="category-header">
+    <span class="category-icon">📄</span>
+    <h2>All Publications</h2>
+    <span class="category-count">{{ site.publications | size }}</span>
+  </div>
+  
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    <div class="publication-card">
+      {% if post.date %}
+      <span class="pub-year">{{ post.date | date: "%Y" }}</span>
+      {% endif %}
+      
+      <h3 class="pub-title">
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}" target="_blank">{{ post.title }}</a>
+        {% else %}
+          {{ post.title }}
+        {% endif %}
+      </h3>
+      
+      {% if post.authors %}
+      <div class="pub-authors">
+        {{ post.authors }}
+      </div>
+      {% endif %}
+      
+      {% if post.venue %}
+      <div class="pub-venue">{{ post.venue }}</div>
+      {% endif %}
+      
+      <div class="pub-tags">
+        {% if post.award %}
+          <span class="pub-tag award">🏆 {{ post.award }}</span>
+        {% endif %}
+        {% if post.presentation %}
+          <span class="pub-tag oral">🎤 {{ post.presentation }}</span>
+        {% endif %}
+      </div>
+      
+      <div class="pub-links">
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}" class="pub-link" target="_blank">
+            <span class="pub-link-icon">📄</span>
+            <span>Paper</span>
+          </a>
+        {% endif %}
+        {% if post.code %}
+          <a href="{{ post.code }}" class="pub-link" target="_blank">
+            <span class="pub-link-icon">💻</span>
+            <span>Code</span>
+          </a>
+        {% endif %}
+        {% if post.video %}
+          <a href="{{ post.video }}" class="pub-link" target="_blank">
+            <span class="pub-link-icon">🎥</span>
+            <span>Video</span>
+          </a>
+        {% endif %}
+      </div>
+      
+      {% if post.excerpt %}
+      <div class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('show')">
+        <span>📖 Abstract</span>
+        <span style="font-size: 0.7rem;">▼</span>
+      </div>
+      <div class="abstract-content">
+        {{ post.excerpt }}
+      </div>
+      {% endif %}
+    </div>
   {% endfor %}
 {% endif %}
 
+</div>
 
-
+<script>
+// Optional: Add smooth scroll and filter functionality
+document.addEventListener('DOMContentLoaded', function() {
+  // Abstract toggle animation
+  const toggles = document.querySelectorAll('.abstract-toggle');
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      const arrow = this.querySelector('span:last-child');
+      const content = this.nextElementSibling;
+      if (content.classList.contains('show')) {
+        arrow.textContent = '▼';
+      } else {
+        arrow.textContent = '▲';
+      }
+    });
+  });
+  
+  // Optional: Filter functionality
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const publications = document.querySelectorAll('.publication-card');
+  
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      // Remove active class from all tabs
+      filterTabs.forEach(t => t.classList.remove('active'));
+      // Add active class to clicked tab
+      this.classList.add('active');
+      
+      const filter = this.getAttribute('data-filter');
+      
+      // Show/hide publications based on filter
+      publications.forEach(pub => {
+        if (filter === 'all' || pub.classList.contains(filter)) {
+          pub.style.display = 'block';
+        } else {
+          pub.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
