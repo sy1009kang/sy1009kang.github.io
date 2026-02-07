@@ -167,19 +167,34 @@ redirect_from:
     </p>
 
     <p>
-      More broadly, I aim to develop interaction techniques and design guidance that enhance <strong>social presence</strong>,
+      More broadly, I aim to develop interaction techniques and design guidelines that enhance <strong>social presence</strong>,
       <strong>communication quality</strong>, and <strong>user agency</strong> in future XR platforms—grounded in user-centered
       experimentation and system building.
     </p>
 
-    <ul class="research-points">
-      <li><strong>Avatar-mediated communication:</strong> embodiment, nonverbal cues, and social presence in VR/AR.</li>
-      <li><strong>Human perception in XR:</strong> identity, agency, trust, and social connection with virtual representations.</li>
-      <li><strong>Interaction design:</strong> creating expressive and reliable avatar behaviors that adapt to context and task needs.</li>
-      <li><strong>Evaluation:</strong> rigorous user studies and mixed-method approaches to assess social and experiential outcomes.</li>
-    </ul>
-  </div>
-</div>
+<ul class="research-points">
+  <li>
+    <strong>Avatar-mediated communication:</strong>
+    investigating how avatars convey nonverbal cues such as facial expressions, gaze, and timing,
+    and how these cues shape social presence, rapport, and communication quality in XR environments.
+  </li>
+  <li>
+    <strong>Human perception in XR:</strong>
+    examining how users perceive identity, agency, and social connection when interacting with
+    virtual representations of themselves and others, including issues of trust and self-identification.
+  </li>
+  <li>
+    <strong>Interaction design:</strong>
+    designing and evaluating interaction techniques that enable expressive, reliable, and
+    context-aware avatar behaviors across different tasks and communication scenarios.
+  </li>
+  <li>
+    <strong>Evaluation:</strong>
+    conducting rigorous user studies using mixed-method approaches—combining quantitative metrics
+    with qualitative insights—to assess social, behavioral, and experiential outcomes in XR systems.
+  </li>
+</ul>
+
 
 <!-- Selected Links -->
 <div class="about-section">
