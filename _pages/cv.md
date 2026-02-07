@@ -54,7 +54,7 @@ redirect_from:
 
 <div class="cv-item">
   <div class="cv-left">
-    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">Georgia Institute of Technology</span> — School of Interactive Computing, USA</div>
+    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">Georgia Institute of Technology</span> — School of Interactive Computing </div>
     <div class="cv-meta">Advisor: Prof. Yalong Yang · Funded by: BK21, NRF</div>
   </div>
   <div class="cv-right">Dec 2025 – Apr 2026</div>
@@ -62,7 +62,7 @@ redirect_from:
 
 <div class="cv-item">
   <div class="cv-left">
-    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">University of Calgary</span> — Dept. of Electrical and Software Engineering, Canada</div>
+    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">University of Calgary</span> — Dept. of Electrical and Software Engineering </div>
     <div class="cv-meta">Advisor: Prof. Kangsoo Kim · Funded by: NSERC Alliance – Alberta Innovates Advance Program</div>
   </div>
   <div class="cv-right">Aug 2025 – Nov 2025</div>
@@ -70,7 +70,7 @@ redirect_from:
 
 <div class="cv-item">
   <div class="cv-left">
-    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">University of Calgary</span> — Dept. of Electrical and Software Engineering, Canada</div>
+    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">University of Calgary</span> — Dept. of Electrical and Software Engineering </div>
     <div class="cv-meta">Advisor: Prof. Kangsoo Kim · Funded by: NRF, Mitacs Globalink Research Award</div>
   </div>
   <div class="cv-right">Aug 2023 – Feb 2024</div>
@@ -78,7 +78,7 @@ redirect_from:
 
 <div class="cv-item">
   <div class="cv-left">
-    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">USC Institute for Creative Technologies</span>, USA</div>
+    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">USC Institute for Creative Technologies</span> </div>
     <div class="cv-meta">Advisor: Prof. Jonathan Gratch · Funded by: BK21, NRF</div>
   </div>
   <div class="cv-right">Dec 2021 – Feb 2022</div>
