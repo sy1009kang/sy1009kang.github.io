@@ -1,308 +1,77 @@
----
-layout: archive
-title: "Research"
-permalink: /publications/
-author_profile: true
----
+/* ===== Publications / Research page (custom) ===== */
+.research-container { max-width: 900px; margin: 0 auto; }
 
-{% include base_path %}
-
-<style>
-.research-container {
-  max-width: 850px;
-  margin: 0 auto;
-}
-
-/* Intro section */
 .research-intro {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background: #f9f9f9;
-  border-left: 3px solid #333;
-  border-radius: 3px;
+  margin: 0 0 2rem 0;
+  padding: 1.25rem 1.25rem;
+  background: rgba(0,0,0,.025);
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 10px;
 }
 
-.research-intro p {
-  margin: 0 0 1rem 0;
-  line-height: 1.6;
-  color: #555;
-}
+.research-intro p { margin: 0 0 .85rem 0; line-height: 1.65; color: rgba(0,0,0,.68); }
+.research-intro p:last-child { margin-bottom: 0; }
 
 .research-intro a {
-  color: #333;
+  color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid rgba(0,0,0,.35);
 }
+.research-intro a:hover { border-bottom-color: rgba(0,0,0,.75); }
 
-.research-intro a:hover {
-  border-bottom: 2px solid #333;
-}
-
-/* Section headers */
 .section-header {
-  margin: 2.5rem 0 1.5rem 0;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #ddd;
+  margin: 2.25rem 0 1rem 0;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid rgba(0,0,0,.08);
 }
+.section-header h2 { margin: 0; font-size: 1.25rem; font-weight: 750; }
 
-.section-header h2 {
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #333;
-}
-
-/* Publication entries */
 .pub-entry {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 1rem 0 1.25rem 0;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.pub-entry:last-child { border-bottom: none; }
+
+.pub-title { margin: 0 0 .35rem 0; font-size: 1.05rem; font-weight: 700; line-height: 1.35; }
+.pub-title a { color: inherit; text-decoration: none; }
+.pub-title a:hover { text-decoration: underline; }
+
+.pub-authors { margin: .15rem 0; font-size: .95rem; color: rgba(0,0,0,.68); }
+.pub-authors .me { font-weight: 800; }
+
+.pub-venue { margin: .15rem 0; font-size: .92rem; color: rgba(0,0,0,.55); font-style: italic; }
+
+.pub-meta { margin-top: .6rem; font-size: .85rem; display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
+
+.pub-year, .pub-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .18rem .55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: rgba(0,0,0,.03);
+  color: rgba(0,0,0,.65);
 }
 
-.pub-entry:last-child {
-  border-bottom: none;
-}
+.pub-tag { background: rgba(255, 193, 7, .12); color: rgba(133, 100, 4, .95); border-color: rgba(255, 193, 7, .25); }
+.pub-tag.oral { background: rgba(40, 167, 69, .10); color: rgba(21, 87, 36, .95); border-color: rgba(40, 167, 69, .22); }
 
-.pub-title {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #222;
-  margin: 0 0 0.5rem 0;
-  line-height: 1.4;
-}
-
-.pub-title a {
-  color: #222;
-  text-decoration: none;
-}
-
-.pub-title a:hover {
-  color: #000;
-  text-decoration: underline;
-}
-
-.pub-authors {
-  font-size: 0.95rem;
-  color: #555;
-  margin: 0.25rem 0;
-}
-
-.pub-authors .me {
-  font-weight: 600;
-}
-
-.pub-venue {
-  font-size: 0.9rem;
-  color: #777;
-  font-style: italic;
-  margin: 0.25rem 0;
-}
-
-.pub-meta {
-  margin-top: 0.75rem;
-  font-size: 0.85rem;
-}
-
-.pub-year {
-  display: inline-block;
-  padding: 0.2rem 0.6rem;
-  background: #f5f5f5;
-  color: #666;
-  border-radius: 3px;
-  margin-right: 0.5rem;
-}
-
-.pub-tag {
-  display: inline-block;
-  padding: 0.2rem 0.6rem;
-  background: #fff3cd;
-  color: #856404;
-  border-radius: 3px;
-  margin-right: 0.5rem;
-  font-size: 0.8rem;
-}
-
-.pub-tag.oral {
-  background: #d4edda;
-  color: #155724;
-}
-
-.pub-links {
-  margin-top: 0.75rem;
-}
+.pub-links { margin-top: .75rem; display: flex; flex-wrap: wrap; gap: .5rem; }
 
 .pub-link {
-  display: inline-block;
-  margin-right: 0.75rem;
-  padding: 0.3rem 0.8rem;
-  background: #f5f5f5;
-  color: #333;
+  display: inline-flex;
+  align-items: center;
+  padding: .32rem .75rem;
+  border-radius: 10px;
+  background: rgba(0,0,0,.03);
+  border: 1px solid rgba(0,0,0,.08);
+  color: inherit;
   text-decoration: none;
-  border-radius: 3px;
-  font-size: 0.85rem;
-  transition: background 0.2s;
+  font-size: .86rem;
 }
+.pub-link:hover { background: rgba(0,0,0,.06); }
 
-.pub-link:hover {
-  background: #e5e5e5;
+@media (max-width: 640px) {
+  .section-header h2 { font-size: 1.15rem; }
 }
-
-@media (max-width: 768px) {
-  .section-header h2 {
-    font-size: 1.2rem;
-  }
-  
-  .pub-link {
-    margin-bottom: 0.5rem;
-  }
-}
-</style>
-
-<div class="research-container">
-
-<!-- Introduction -->
-<div class="research-intro">
-  <p>My research focuses on XR/VR technologies, human-computer interaction, and immersive collaboration systems. I explore innovative ways to enhance human experiences through virtual and augmented reality.</p>
-  {% if site.author.googlescholar %}
-  <p><a href="{{site.author.googlescholar}}" target="_blank">→ View full publication list on Google Scholar</a></p>
-  {% endif %}
-</div>
-
-<!-- Publications by Category -->
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-    
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      
-      {% unless title_shown %}
-        <div class="section-header">
-          <h2>{{ category[1].title }}</h2>
-        </div>
-        {% assign title_shown = true %}
-      {% endunless %}
-      
-      <!-- Publication Entry -->
-      <div class="pub-entry">
-        <h3 class="pub-title">
-          {% if post.paperurl %}
-            <a href="{{ post.paperurl }}" target="_blank">{{ post.title }}</a>
-          {% else %}
-            {{ post.title }}
-          {% endif %}
-        </h3>
-        
-        {% if post.authors %}
-        <p class="pub-authors">{{ post.authors | replace: "Your Name", "<span class='me'>Your Name</span>" }}</p>
-        {% endif %}
-        
-        {% if post.venue %}
-        <p class="pub-venue">{{ post.venue }}</p>
-        {% endif %}
-        
-        <div class="pub-meta">
-          {% if post.date %}
-          <span class="pub-year">{{ post.date | date: "%Y" }}</span>
-          {% endif %}
-          
-          {% if post.award %}
-          <span class="pub-tag">🏆 {{ post.award }}</span>
-          {% endif %}
-          
-          {% if post.presentation %}
-          <span class="pub-tag oral">🎤 {{ post.presentation }}</span>
-          {% endif %}
-        </div>
-        
-        {% if post.paperurl or post.pdf or post.code or post.video or post.slides or post.dataset %}
-        <div class="pub-links">
-          {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>
-          {% endif %}
-          
-          {% if post.pdf %}
-          <a href="{{ post.pdf }}" class="pub-link" target="_blank">PDF</a>
-          {% endif %}
-          
-          {% if post.code %}
-          <a href="{{ post.code }}" class="pub-link" target="_blank">Code</a>
-          {% endif %}
-          
-          {% if post.video %}
-          <a href="{{ post.video }}" class="pub-link" target="_blank">Video</a>
-          {% endif %}
-          
-          {% if post.slides %}
-          <a href="{{ post.slides }}" class="pub-link" target="_blank">Slides</a>
-          {% endif %}
-          
-          {% if post.dataset %}
-          <a href="{{ post.dataset }}" class="pub-link" target="_blank">Dataset</a>
-          {% endif %}
-        </div>
-        {% endif %}
-      </div>
-    {% endfor %}
-  {% endfor %}
-  
-{% else %}
-  <!-- If no categories, show all publications -->
-  <div class="section-header">
-    <h2>Publications</h2>
-  </div>
-  
-  {% for post in site.publications reversed %}
-    <div class="pub-entry">
-      <h3 class="pub-title">
-        {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" target="_blank">{{ post.title }}</a>
-        {% else %}
-          {{ post.title }}
-        {% endif %}
-      </h3>
-      
-      {% if post.authors %}
-      <p class="pub-authors">{{ post.authors }}</p>
-      {% endif %}
-      
-      {% if post.venue %}
-      <p class="pub-venue">{{ post.venue }}</p>
-      {% endif %}
-      
-      <div class="pub-meta">
-        {% if post.date %}
-        <span class="pub-year">{{ post.date | date: "%Y" }}</span>
-        {% endif %}
-        
-        {% if post.award %}
-        <span class="pub-tag">🏆 {{ post.award }}</span>
-        {% endif %}
-        
-        {% if post.presentation %}
-        <span class="pub-tag oral">🎤 {{ post.presentation }}</span>
-        {% endif %}
-      </div>
-      
-      {% if post.paperurl or post.code or post.video %}
-      <div class="pub-links">
-        {% if post.paperurl %}
-        <a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>
-        {% endif %}
-        
-        {% if post.code %}
-        <a href="{{ post.code }}" class="pub-link" target="_blank">Code</a>
-        {% endif %}
-        
-        {% if post.video %}
-        <a href="{{ post.video }}" class="pub-link" target="_blank">Video</a>
-        {% endif %}
-      </div>
-      {% endif %}
-    </div>
-  {% endfor %}
-{% endif %}
-
-</div>
