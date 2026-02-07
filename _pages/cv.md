@@ -69,6 +69,7 @@ redirect_from:
   font-style: italic;
 }
 
+/* Details list */
 .entry-details {
   margin-top: 0.75rem;
   padding-left: 1.25rem;
@@ -133,6 +134,11 @@ redirect_from:
   margin-bottom: 0;
 }
 
+/* Small emoji alignment */
+.emoji {
+  margin-right: .35rem;
+}
+
 @media (max-width: 768px) {
   .section-header h2 {
     font-size: 1.2rem;
@@ -144,7 +150,7 @@ redirect_from:
 
 <!-- Education -->
 <div class="section-header">
-  <h2>Education</h2>
+  <h2><span class="emoji">🎓</span>Education</h2>
 </div>
 
 <div class="entry">
@@ -175,7 +181,7 @@ redirect_from:
 
 <!-- Work Experience -->
 <div class="section-header">
-  <h2>Work Experience</h2>
+  <h2><span class="emoji">💼</span>Work Experience</h2>
 </div>
 
 <!-- Visiting Researcher Group -->
@@ -223,7 +229,7 @@ redirect_from:
 
 <!-- Projects -->
 <div class="section-header">
-  <h2>Projects</h2>
+  <h2><span class="emoji">🧪</span>Projects</h2>
 </div>
 
 <div class="entry">
@@ -246,7 +252,7 @@ redirect_from:
 
 <!-- Service and Leadership -->
 <div class="section-header">
-  <h2>Service & Leadership</h2>
+  <h2><span class="emoji">🤝</span>Service &amp; Leadership</h2>
 </div>
 
 <div class="entry">
