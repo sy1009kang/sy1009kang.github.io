@@ -10,473 +10,140 @@ redirect_from:
 {% include base_path %}
 
 <style>
-/* Modern Minimal CV Styles */
-.cv-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* Stats Section */
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0 3rem 0;
-}
-
-.stat-card {
-  background: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 8px;
-  text-align: center;
-  border: 1px solid #e9ecef;
-  transition: all 0.3s ease;
-}
-
-.stat-card:hover {
-  background: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.stat-number {
-  font-size: 2rem;
-  font-weight: 700;
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #2d3748;
-}
-
-.stat-label {
-  font-size: 0.85rem;
-  color: #718096;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-/* Section Headers */
-.section-header {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin: 3rem 0 1.5rem 0;
-  padding-bottom: 0.75rem;
-  border-bottom: 2px solid #2d3748;
-}
-
-.section-icon {
-  font-size: 1.5rem;
-}
-
-.section-header h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #2d3748;
-}
-
-/* Timeline */
-.timeline {
-  position: relative;
-  padding-left: 2rem;
-  margin: 2rem 0;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #e2e8f0;
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 2.5rem;
-  padding-left: 1.5rem;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -2.35rem;
-  top: 0.25rem;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #4a5568;
-  border: 3px solid white;
-  box-shadow: 0 0 0 2px #4a5568;
-}
-
-.timeline-item.current::before {
-  background: #2d3748;
-  box-shadow: 0 0 0 2px #2d3748;
-}
-
-/* Cards */
-.card {
-  background: white;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid #e2e8f0;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border-color: #cbd5e0;
-}
-
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.75rem;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.card-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #2d3748;
-  margin: 0;
-}
-
-.card-subtitle {
-  font-size: 0.95rem;
-  color: #4a5568;
-  margin: 0.25rem 0;
-}
-
-.card-meta {
-  font-size: 0.85rem;
-  color: #718096;
-  margin: 0.25rem 0;
-}
-
-.date-badge {
-  display: inline-block;
-  padding: 0.35rem 0.85rem;
-  background: #f7fafc;
-  color: #4a5568;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-.current-badge {
-  background: #2d3748;
-  color: white;
-  border-color: #2d3748;
-}
-
-/* Location Tags */
-.location-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  padding: 0.25rem 0.75rem;
-  background: #f7fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  color: #4a5568;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-/* Funding Badge */
-.funding-badge {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  background: #fffbeb;
-  color: #92400e;
-  border: 1px solid #fde68a;
-  border-radius: 6px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  margin-top: 0.5rem;
-}
-
-/* List Styles */
-.detail-list {
-  margin: 0.75rem 0 0 1.25rem;
-  padding: 0;
-  list-style: none;
-}
-
-.detail-list li {
-  position: relative;
-  padding-left: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: #4a5568;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.detail-list li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: #2d3748;
-  font-weight: bold;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .card-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .timeline {
-    padding-left: 1.5rem;
-  }
-}
+.cv-section { margin-top: 1.75rem; }
+.cv-section h2 { margin-bottom: .75rem; padding-bottom: .35rem; border-bottom: 1px solid #eee; }
+.cv-item { display: flex; justify-content: space-between; gap: 1rem; margin: .6rem 0; }
+.cv-left { flex: 1; }
+.cv-right { white-space: nowrap; color: #666; font-size: 0.95em; }
+.cv-role { font-weight: 700; }
+.cv-org { font-weight: 600; }
+.cv-meta { color: #555; margin-top: .15rem; }
+.badge { display: inline-block; padding: .15rem .5rem; border: 1px solid #ddd; border-radius: 999px; font-size: .85em; color: #444; margin-left: .35rem; }
+.subbullets { margin-top: .35rem; margin-bottom: 0; }
 </style>
 
-<div class="cv-container">
+<div class="cv-section">
+<h2>🎓 Education</h2>
 
-<!-- Stats Overview -->
-<div class="stats-grid">
-  <div class="stat-card">
-    <span class="stat-number">6+</span>
-    <span class="stat-label">Years Research</span>
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">Ph.D. in Culture Technology</span>, <span class="cv-org">KAIST</span>, Daejeon, Korea</div>
+    <div class="cv-meta">Ubiquitous Virtual Reality (UVR) Lab · Advisor: Prof. Woontack Woo</div>
   </div>
-  <div class="stat-card">
-    <span class="stat-number">4</span>
-    <span class="stat-label">Countries Visited</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-number">2</span>
-    <span class="stat-label">Active Projects</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-number">ISO</span>
-    <span class="stat-label">Standards Expert</span>
-  </div>
+  <div class="cv-right">Aug 2022 – Present <span class="badge">Expected Aug 2026</span></div>
 </div>
 
-<!-- Education Section -->
-<div class="section-header">
-  <span class="section-icon">🎓</span>
-  <h2>Education</h2>
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">M.S. in Culture Technology</span>, <span class="cv-org">KAIST</span>, Daejeon, Korea</div>
+    <div class="cv-meta">Ubiquitous Virtual Reality (UVR) Lab · Advisor: Prof. Woontack Woo</div>
+  </div>
+  <div class="cv-right">Sep 2020 – Aug 2022</div>
 </div>
 
-<div class="timeline">
-  <div class="timeline-item current">
-    <div class="card">
-      <div class="card-header">
-        <div>
-          <h3 class="card-title">Ph.D. in Culture Technology</h3>
-          <p class="card-subtitle">Korea Advanced Institute of Science and Technology (KAIST)</p>
-          <p class="card-meta">Ubiquitous Virtual Reality (UVR) Lab · Advisor: Prof. Woontack Woo</p>
-        </div>
-        <span class="date-badge current-badge">Aug 2022 – Present</span>
-      </div>
-      <div class="location-tag">📍 Daejeon, Korea</div>
-      <div class="location-tag">🎯 Expected: Aug 2026</div>
-    </div>
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">B.S. in Media & Communication (Cum Laude)</span>, <span class="cv-org">Chung-Ang University</span>, Seoul, Korea</div>
   </div>
-
-  <div class="timeline-item">
-    <div class="card">
-      <div class="card-header">
-        <div>
-          <h3 class="card-title">M.S. in Culture Technology</h3>
-          <p class="card-subtitle">Korea Advanced Institute of Science and Technology (KAIST)</p>
-          <p class="card-meta">Ubiquitous Virtual Reality (UVR) Lab · Advisor: Prof. Woontack Woo</p>
-        </div>
-        <span class="date-badge">Sep 2020 – Aug 2022</span>
-      </div>
-      <div class="location-tag">📍 Daejeon, Korea</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="card">
-      <div class="card-header">
-        <div>
-          <h3 class="card-title">B.S. in Media & Communication</h3>
-          <p class="card-subtitle">Chung-Ang University</p>
-          <p class="card-meta">Graduated Cum Laude</p>
-        </div>
-        <span class="date-badge">Mar 2015 – Aug 2020</span>
-      </div>
-      <div class="location-tag">📍 Seoul, Korea</div>
-    </div>
-  </div>
+  <div class="cv-right">Mar 2015 – Aug 2020</div>
+</div>
 </div>
 
-<!-- Work Experience Section -->
-<div class="section-header">
-  <span class="section-icon">💼</span>
-  <h2>Work Experience</h2>
+<div class="cv-section">
+<h2>💼 Work Experience</h2>
+
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">Georgia Institute of Technology</span> — School of Interactive Computing, USA</div>
+    <div class="cv-meta">Advisor: Prof. Yalong Yang · Funded by: BK21, NRF</div>
+  </div>
+  <div class="cv-right">Dec 2025 – Apr 2026</div>
 </div>
 
-<div class="timeline">
-  <div class="timeline-item current">
-    <div class="card">
-      <div class="card-header">
-        <div>
-          <h3 class="card-title">Visiting Researcher</h3>
-          <p class="card-subtitle">Georgia Institute of Technology</p>
-          <p class="card-meta">School of Interactive Computing · Advisor: Prof. Yalong Yang</p>
-        </div>
-        <span class="date-badge current-badge">Dec 2025 – Apr 2026</span>
-      </div>
-      <div class="location-tag">📍 Atlanta, USA</div>
-      <div class="funding-badge">💰 BK21, National Research Foundation of Korea (NRF)</div>
-    </div>
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">University of Calgary</span> — Dept. of Electrical and Software Engineering, Canada</div>
+    <div class="cv-meta">Advisor: Prof. Kangsoo Kim · Funded by: NSERC Alliance – Alberta Innovates Advance Program</div>
   </div>
-
-  <div class="timeline-item">
-    <div class="card">
-      <div class="card-header">
-        <div>
-          <h3 class="card-title">Visiting Researcher</h3>
-          <p class="card-subtitle">University of Calgary</p>
-          <p class="card-meta">Department of Electrical and Software Engineering · Advisor: Prof. Kangsoo Kim</p>
-        </div>
-        <span class="date-badge">Aug 2025 – Nov 2025</span>
-      </div>
-      <div class="location-tag">📍 Calgary, Canada</div>
-      <div class="funding-badge">💰 NSERC Alliance – Alberta Innovates Advance Program</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="card">
-      <div class="card-header">
-        <div>
-          <h3 class="card-title">Visiting Researcher</h3>
-          <p class="card-subtitle">University of Calgary</p>
-          <p class="card-meta">Department of Electrical and Software Engineering · Advisor: Prof. Kangsoo Kim</p>
-        </div>
-        <span class="date-badge">Aug 2023 – Feb 2024</span>
-      </div>
-      <div class="location-tag">📍 Calgary, Canada</div>
-      <div class="funding-badge">💰 NRF, Mitacs Globalink Research Award</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="card">
-      <div class="card-header">
-        <div>
-          <h3 class="card-title">Visiting Researcher</h3>
-          <p class="card-subtitle">University of Southern California</p>
-          <p class="card-meta">Institute for Creative Technologies · Advisor: Prof. Jonathan Gratch</p>
-        </div>
-        <span class="date-badge">Dec 2021 – Feb 2022</span>
-      </div>
-      <div class="location-tag">📍 Los Angeles, USA</div>
-      <div class="funding-badge">💰 BK21, NRF</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="card">
-      <div class="card-header">
-        <div>
-          <h3 class="card-title">Research Intern</h3>
-          <p class="card-subtitle">Seoul National University</p>
-          <p class="card-meta">User Experience Lab</p>
-        </div>
-        <span class="date-badge">Mar 2020 – Apr 2020</span>
-      </div>
-      <div class="location-tag">📍 Seoul, Korea</div>
-    </div>
-  </div>
+  <div class="cv-right">Aug 2025 – Nov 2025</div>
 </div>
 
-<!-- Projects Section -->
-<div class="section-header">
-  <span class="section-icon">🔬</span>
-  <h2>Projects</h2>
-</div>
-
-<div class="card">
-  <div class="card-header">
-    <div>
-      <h3 class="card-title">OpenXR: Development of an Open XR Platform for Highly Immersive Collaboration</h3>
-      <p class="card-subtitle">KAIST, KISTI, KICT</p>
-    </div>
-    <span class="date-badge current-badge">Dec 2021 – Present</span>
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">University of Calgary</span> — Dept. of Electrical and Software Engineering, Canada</div>
+    <div class="cv-meta">Advisor: Prof. Kangsoo Kim · Funded by: NRF, Mitacs Globalink Research Award</div>
   </div>
-  <div class="funding-badge">💰 National Research Council of Science and Technology (NST)</div>
+  <div class="cv-right">Aug 2023 – Feb 2024</div>
 </div>
 
-<div class="card">
-  <div class="card-header">
-    <div>
-      <h3 class="card-title">TranSpace: Human Reconstruction for Highly Realistic Virtual Interaction</h3>
-      <p class="card-subtitle">KAIST</p>
-    </div>
-    <span class="date-badge">Sep 2020 – Nov 2021</span>
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">USC Institute for Creative Technologies</span>, USA</div>
+    <div class="cv-meta">Advisor: Prof. Jonathan Gratch · Funded by: BK21, NRF</div>
   </div>
-  <div class="funding-badge">💰 National Research Council of Science and Technology (NST)</div>
+  <div class="cv-right">Dec 2021 – Feb 2022</div>
 </div>
 
-<!-- Service and Leadership Section -->
-<div class="section-header">
-  <span class="section-icon">🌟</span>
-  <h2>Service & Leadership</h2>
-</div>
-
-<div class="card">
-  <div class="card-header">
-    <div>
-      <h3 class="card-title">Student Volunteer Chair</h3>
-      <p class="card-subtitle">IEEE International Symposium on Mixed and Augmented Reality (ISMAR 2025)</p>
-    </div>
-    <span class="date-badge current-badge">2025</span>
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">Research Intern</span>, <span class="cv-org">Seoul National University</span> — User Experience Lab, Korea</div>
   </div>
+  <div class="cv-right">Mar 2020 – Apr 2020</div>
+</div>
 </div>
 
-<div class="card">
-  <div class="card-header">
-    <div>
-      <h3 class="card-title">Student Volunteer</h3>
-      <p class="card-subtitle">IEEE International Symposium on Mixed and Augmented Reality (ISMAR 2024)</p>
-    </div>
-    <span class="date-badge">2024</span>
+<div class="cv-section">
+<h2>🧪 Projects</h2>
+
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">OpenXR: Development of an Open XR Platform for Highly Immersive Collaboration</span></div>
+    <div class="cv-meta">KAIST, KISTI, KICT · Funded by: NST</div>
   </div>
+  <div class="cv-right">Dec 2021 – Present</div>
 </div>
 
-<div class="card">
-  <div class="card-header">
-    <div>
-      <h3 class="card-title">Student Volunteer</h3>
-      <p class="card-subtitle">IEEE Conference on Virtual Reality and 3D User Interfaces (IEEE VR 2024)</p>
-    </div>
-    <span class="date-badge">2024</span>
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">TranSpace: Human Reconstruction for Highly Realistic Virtual Interaction</span></div>
+    <div class="cv-meta">KAIST · Funded by: NST</div>
   </div>
+  <div class="cv-right">Sep 2020 – Nov 2021</div>
+</div>
 </div>
 
-<div class="card">
-  <div class="card-header">
-    <div>
-      <h3 class="card-title">Young Standardization Expert</h3>
-      <p class="card-subtitle">Telecommunications Technology Association (TTA), Korea</p>
-    </div>
-    <span class="date-badge current-badge">Jun 2023 – Present</span>
+<div class="cv-section">
+<h2>🤝 Service & Leadership</h2>
+
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">Student Volunteer Chair</span>, <span class="cv-org">IEEE ISMAR 2025</span></div>
   </div>
-  <ul class="detail-list">
-    <li>Contributing member of ISO/IEC JTC 1/SC 24 WG 9 (Augmented and Virtual Reality)</li>
-    <li>Presenter and contributor at ISO/IEC JTC 1/SC 24 plenary and working group meetings</li>
-    <li>Meetings: Sydney 2023, Paris 2024, Alexandria 2025</li>
-  </ul>
+  <div class="cv-right">2025</div>
 </div>
 
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">Student Volunteer</span>, <span class="cv-org">IEEE ISMAR 2024</span></div>
+  </div>
+  <div class="cv-right">2024</div>
+</div>
+
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">Student Volunteer</span>, <span class="cv-org">IEEE VR 2024</span></div>
+  </div>
+  <div class="cv-right">2024</div>
+</div>
+
+<div class="cv-item">
+  <div class="cv-left">
+    <div><span class="cv-role">Young Standardization Expert</span>, <span class="cv-org">TTA</span>, Korea</div>
+    <ul class="subbullets">
+      <li>Contributing member of ISO/IEC JTC 1/SC 24 WG 9 (Augmented and Virtual Reality)</li>
+      <li>Presenter and contributor at ISO/IEC JTC 1/SC 24 plenary and working group meetings (Sydney 2023, Paris 2024, Alexandria 2025)</li>
+    </ul>
+  </div>
+  <div class="cv-right">Jun 2023 – Present</div>
+</div>
 </div>
