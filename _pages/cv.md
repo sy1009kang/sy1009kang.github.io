@@ -56,7 +56,9 @@ redirect_from:
   <!-- Visiting Researcher group -->
   <div class="cv-item">
     <div class="cv-left">
-      <div><span class="cv-role">Visiting Researcher</span></div>
+      <div>
+        <span class="cv-role">Visiting Researcher</span>
+      </div>
 
       <div class="cv-meta">
         <span class="cv-org">Georgia Institute of Technology</span> · School of Interactive Computing<br>
@@ -68,7 +70,7 @@ redirect_from:
 
   <div class="cv-item">
     <div class="cv-left">
-      <div class="cv-meta">
+      <div class="cv-meta indent">
         <span class="cv-org">University of Calgary</span> · Department of Electrical and Software Engineering<br>
         Advisor: Prof. Kangsoo Kim · Funded by NSERC Alliance – Alberta Innovates Advance Program
       </div>
@@ -78,7 +80,7 @@ redirect_from:
 
   <div class="cv-item">
     <div class="cv-left">
-      <div class="cv-meta">
+      <div class="cv-meta indent">
         <span class="cv-org">University of Calgary</span> · Department of Electrical and Software Engineering<br>
         Advisor: Prof. Kangsoo Kim · Funded by NRF, Mitacs Globalink Research Award
       </div>
@@ -88,7 +90,7 @@ redirect_from:
 
   <div class="cv-item">
     <div class="cv-left">
-      <div class="cv-meta">
+      <div class="cv-meta indent">
         <span class="cv-org">USC Institute for Creative Technologies</span><br>
         Advisor: Prof. Jonathan Gratch · Funded by BK21, NRF
       </div>
