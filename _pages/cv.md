@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 <style>
-/* Modern CV Styles */
+/* Modern Minimal CV Styles */
 .cv-container {
   max-width: 900px;
   margin: 0 auto;
@@ -25,17 +25,17 @@ redirect_from:
 }
 
 .stat-card {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #f8f9fa;
   padding: 1.5rem;
-  border-radius: 12px;
+  border-radius: 8px;
   text-align: center;
-  color: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
 }
 
 .stat-card:hover {
-  transform: translateY(-5px);
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .stat-number {
@@ -43,11 +43,12 @@ redirect_from:
   font-weight: 700;
   display: block;
   margin-bottom: 0.5rem;
+  color: #2d3748;
 }
 
 .stat-label {
   font-size: 0.85rem;
-  opacity: 0.9;
+  color: #718096;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -59,7 +60,7 @@ redirect_from:
   gap: 0.75rem;
   margin: 3rem 0 1.5rem 0;
   padding-bottom: 0.75rem;
-  border-bottom: 2px solid #667eea;
+  border-bottom: 2px solid #2d3748;
 }
 
 .section-icon {
@@ -87,7 +88,7 @@ redirect_from:
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  background: #e2e8f0;
 }
 
 .timeline-item {
@@ -104,24 +105,14 @@ redirect_from:
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #667eea;
+  background: #4a5568;
   border: 3px solid white;
-  box-shadow: 0 0 0 2px #667eea;
+  box-shadow: 0 0 0 2px #4a5568;
 }
 
 .timeline-item.current::before {
-  background: #48bb78;
-  box-shadow: 0 0 0 2px #48bb78, 0 0 0 4px rgba(72, 187, 120, 0.2);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    box-shadow: 0 0 0 2px #48bb78, 0 0 0 4px rgba(72, 187, 120, 0.2);
-  }
-  50% {
-    box-shadow: 0 0 0 2px #48bb78, 0 0 0 8px rgba(72, 187, 120, 0.1);
-  }
+  background: #2d3748;
+  box-shadow: 0 0 0 2px #2d3748;
 }
 
 /* Cards */
@@ -130,14 +121,13 @@ redirect_from:
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  border-left: 4px solid #667eea;
+  border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-color: #cbd5e0;
 }
 
 .card-header {
@@ -170,59 +160,20 @@ redirect_from:
 
 .date-badge {
   display: inline-block;
-  padding: 0.25rem 0.75rem;
-  background: #edf2f7;
+  padding: 0.35rem 0.85rem;
+  background: #f7fafc;
   color: #4a5568;
-  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
   font-size: 0.85rem;
   font-weight: 500;
   white-space: nowrap;
 }
 
 .current-badge {
-  background: #c6f6d5;
-  color: #22543d;
-}
-
-/* Progress Bar */
-.progress-container {
-  background: white;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.progress-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.75rem;
-}
-
-.progress-label {
-  font-weight: 600;
-  color: #2d3748;
-}
-
-.progress-percentage {
-  font-size: 0.9rem;
-  color: #667eea;
-  font-weight: 600;
-}
-
-.progress-bar {
-  height: 8px;
-  background: #e2e8f0;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-  border-radius: 4px;
-  transition: width 1s ease;
+  background: #2d3748;
+  color: white;
+  border-color: #2d3748;
 }
 
 /* Location Tags */
@@ -233,7 +184,7 @@ redirect_from:
   padding: 0.25rem 0.75rem;
   background: #f7fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
+  border-radius: 6px;
   font-size: 0.85rem;
   color: #4a5568;
   margin-right: 0.5rem;
@@ -244,9 +195,10 @@ redirect_from:
 .funding-badge {
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  background: #fef5e7;
-  color: #975a16;
-  border-radius: 12px;
+  background: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  border-radius: 6px;
   font-size: 0.8rem;
   font-weight: 500;
   margin-top: 0.5rem;
@@ -269,10 +221,10 @@ redirect_from:
 }
 
 .detail-list li::before {
-  content: '▸';
+  content: '•';
   position: absolute;
   left: 0;
-  color: #667eea;
+  color: #2d3748;
   font-weight: bold;
 }
 
@@ -312,17 +264,6 @@ redirect_from:
   <div class="stat-card">
     <span class="stat-number">ISO</span>
     <span class="stat-label">Standards Expert</span>
-  </div>
-</div>
-
-<!-- PhD Progress -->
-<div class="progress-container">
-  <div class="progress-header">
-    <span class="progress-label">🎓 Ph.D. Progress (2022–2026)</span>
-    <span class="progress-percentage">75%</span>
-  </div>
-  <div class="progress-bar">
-    <div class="progress-fill" style="width: 75%;"></div>
   </div>
 </div>
 
