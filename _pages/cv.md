@@ -30,7 +30,7 @@ redirect_from:
     <div><span class="cv-role">Ph.D. in Culture Technology</span>, <span class="cv-org">KAIST</span>, Daejeon, Korea</div>
     <div class="cv-meta">Ubiquitous Virtual Reality (UVR) Lab · Advisor: Prof. Woontack Woo</div>
   </div>
-  <div class="cv-right">Aug 2022 – Present <span class="badge">Expected Aug 2026</span></div>
+  <div class="cv-right">Aug 2022 – Present (Expected Aug 2026) </div>
 </div>
 
 <div class="cv-item">
