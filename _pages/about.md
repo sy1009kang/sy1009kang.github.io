@@ -134,15 +134,14 @@ redirect_from:
   <h2>🚀 Recent & Upcoming News</h2>
 
   <div class="news-text">
-    📍 <strong>Visiting Researcher @ Georgia Institute of Technology</strong><br>
+    📍 <strong>Visiting Researcher @ Georgia Institute of Technology</strong> [Dec 2025 - Apr 2026] <br>
     School of Interactive Computing · Collaborating with <strong>Prof. Yalong Yang</strong><br>
-    <span class="news-date">Dec 2025 – Apr 2026</span>
   </div>
 
   <div class="news-text">
-    🎤 <strong>IEEE VR 2026 Presentation</strong><br>
+    🎤 <strong>Three TVCG Papers Presented at IEEE VR 2026 Presentation @ Daegu, Korea </strong><br>
     Three papers (1 first-author, 2 co-author) will be published in <strong>IEEE TVCG</strong>
-    and presented at the conference.
+    and presented at IEEE VR 2026.
   </div>
 
   <div class="news-text">
