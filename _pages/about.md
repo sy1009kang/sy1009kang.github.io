@@ -1,4 +1,4 @@
-```markdown
+
 ---
 permalink: /
 title: "About Me"
