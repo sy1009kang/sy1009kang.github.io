@@ -131,18 +131,6 @@ redirect_from:
     <span class="tag">Communication</span>
     <span class="tag">Embodiment</span>
   </div>
-
-  <div class="links">
-    {% if site.author.googlescholar %}
-      <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>
-    {% endif %}
-    {% if site.author.github %}
-      <a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
-    {% endif %}
-    {% if site.author.email %}
-      <a href="mailto:{{ site.author.email }}">Email</a>
-    {% endif %}
-  </div>
 </div>
 
 <!-- Recent & Upcoming -->
