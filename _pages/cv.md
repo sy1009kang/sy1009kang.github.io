@@ -124,14 +124,14 @@ redirect_from:
 
 <div class="cv-item">
   <div class="cv-left">
-    <div><span class="cv-role">Student Volunteer</span>, <span class="cv-org">IEEE ISMAR 2024</span></div>
+    <div><span class="cv-role">Student Volunteer</span>, <span class="cv-org">IEEE ISMAR 2023, 2024</span></div>
   </div>
   <div class="cv-right">2024</div>
 </div>
 
 <div class="cv-item">
   <div class="cv-left">
-    <div><span class="cv-role">Student Volunteer</span>, <span class="cv-org">IEEE VR 2024</span></div>
+    <div><span class="cv-role">Student Volunteer</span>, <span class="cv-org">IEEE VR 2024, 2025</span></div>
   </div>
   <div class="cv-right">2024</div>
 </div>
