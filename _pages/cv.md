@@ -54,42 +54,72 @@ redirect_from:
 
 <div class="cv-item">
   <div class="cv-left">
-    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">Georgia Institute of Technology</span> — School of Interactive Computing </div>
-    <div class="cv-meta">Advisor: Prof. Yalong Yang · Funded by: BK21, NRF</div>
+    <div>
+      <span class="cv-role">Visiting Researcher</span>, 
+      <span class="cv-org">Georgia Institute of Technology</span>
+    </div>
+    <div class="cv-meta">
+      School of Interactive Computing · Advisor: Prof. Yalong Yang<br>
+      Funded by BK21, National Research Foundation of Korea (NRF)
+    </div>
   </div>
   <div class="cv-right">Dec 2025 – Apr 2026</div>
 </div>
 
 <div class="cv-item">
   <div class="cv-left">
-    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">University of Calgary</span> — Dept. of Electrical and Software Engineering </div>
-    <div class="cv-meta">Advisor: Prof. Kangsoo Kim · Funded by: NSERC Alliance – Alberta Innovates Advance Program</div>
+    <div>
+      <span class="cv-role">Visiting Researcher</span>, 
+      <span class="cv-org">University of Calgary</span>
+    </div>
+    <div class="cv-meta">
+      Department of Electrical and Software Engineering · Advisor: Prof. Kangsoo Kim<br>
+      Funded by NSERC Alliance – Alberta Innovates Advance Program
+    </div>
   </div>
   <div class="cv-right">Aug 2025 – Nov 2025</div>
 </div>
 
 <div class="cv-item">
   <div class="cv-left">
-    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">University of Calgary</span> — Dept. of Electrical and Software Engineering </div>
-    <div class="cv-meta">Advisor: Prof. Kangsoo Kim · Funded by: NRF, Mitacs Globalink Research Award</div>
+    <div>
+      <span class="cv-role">Visiting Researcher</span>, 
+      <span class="cv-org">University of Calgary</span>
+    </div>
+    <div class="cv-meta">
+      Department of Electrical and Software Engineering · Advisor: Prof. Kangsoo Kim<br>
+      Funded by NRF, Mitacs Globalink Research Award
+    </div>
   </div>
   <div class="cv-right">Aug 2023 – Feb 2024</div>
 </div>
 
 <div class="cv-item">
   <div class="cv-left">
-    <div><span class="cv-role">Visiting Researcher</span>, <span class="cv-org">USC Institute for Creative Technologies</span> </div>
-    <div class="cv-meta">Advisor: Prof. Jonathan Gratch · Funded by: BK21, NRF</div>
+    <div>
+      <span class="cv-role">Visiting Researcher</span>, 
+      <span class="cv-org">USC Institute for Creative Technologies</span>
+    </div>
+    <div class="cv-meta">
+      Advisor: Prof. Jonathan Gratch · Funded by BK21, NRF
+    </div>
   </div>
   <div class="cv-right">Dec 2021 – Feb 2022</div>
 </div>
 
 <div class="cv-item">
   <div class="cv-left">
-    <div><span class="cv-role">Research Intern</span>, <span class="cv-org">Seoul National University</span> — User Experience Lab, Korea</div>
+    <div>
+      <span class="cv-role">Research Intern</span>, 
+      <span class="cv-org">Seoul National University</span>
+    </div>
+    <div class="cv-meta">
+      User Experience Lab, Korea
+    </div>
   </div>
   <div class="cv-right">Mar 2020 – Apr 2020</div>
 </div>
+
 </div>
 
 <div class="cv-section">
