@@ -133,24 +133,18 @@ redirect_from:
 <div class="about-section">
   <h2>🚀 Recent & Upcoming News</h2>
   
-  <div class="news-item">
-    <span class="news-date">Dec 2025 – Apr 2026</span>
     <div class="news-text">
       Visiting Researcher at <strong>Georgia Institute of Technology</strong> (School of Interactive Computing),
-      collaborating with <strong>Prof. Yalong Yang</strong>.
+      collaborating with <strong>Prof. Yalong Yang</strong> [Dec 2025 - Apr 2026].
     </div>
   </div>
 
-  <div class="news-item">
-    <span class="news-date">Mar 2026</span>
     <div class="news-text">
       Presenting at <strong>IEEE VR 2026</strong>.
       Three papers (1 first-author, 2 co-author) will be published in <strong>IEEE TVCG</strong> and presented at the conference.
     </div>
   </div>
 
-  <div class="news-item">
-    <span class="news-date">May 2026</span>
     <div class="news-text">
       <strong>Ph.D. Defense</strong> (details for the public talk will be announced soon).
     </div>
