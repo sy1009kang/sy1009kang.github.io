@@ -1,3 +1,4 @@
+```markdown
 ---
 layout: archive
 title: "Research"
@@ -20,9 +21,7 @@ author_profile: true
   border-bottom: 1px solid #f5f5f5;
 }
 
-.pub-item:last-child {
-  border-bottom: none;
-}
+.pub-item:last-child { border-bottom: none; }
 
 .pub-left { flex: 1; }
 .pub-right { white-space: nowrap; color: #666; font-size: 0.9em; }
@@ -48,9 +47,7 @@ author_profile: true
   font-size: 0.95em;
 }
 
-.pub-authors .me { 
-  font-weight: 600; 
-}
+.pub-authors .me { font-weight: 600; }
 
 .pub-venue { 
   color: #777; 
@@ -59,9 +56,7 @@ author_profile: true
   font-size: 0.9em;
 }
 
-.pub-links { 
-  margin-top: .5rem; 
-}
+.pub-links { margin-top: .5rem; }
 
 .pub-link { 
   display: inline-block;
@@ -74,9 +69,7 @@ author_profile: true
   font-size: 0.85em;
 }
 
-.pub-link:hover { 
-  background: #e5e5e5; 
-}
+.pub-link:hover { background: #e5e5e5; }
 
 .badge-award { 
   display: inline-block; 
@@ -113,9 +106,7 @@ author_profile: true
   border-bottom: 1px solid #333;
 }
 
-.intro-note a:hover {
-  border-bottom: 2px solid #333;
-}
+.intro-note a:hover { border-bottom: 2px solid #333; }
 
 @media (max-width: 768px) {
   .pub-item { flex-direction: column; gap: .3rem; }
@@ -153,6 +144,8 @@ author_profile: true
           <div class="pub-title">
             {% if post.paperurl %}
               <a href="{{ post.paperurl }}" target="_blank">{{ post.title }}</a>
+            {% elsif post.doi %}
+              <a href="https://doi.org/{{ post.doi }}" target="_blank">{{ post.title }}</a>
             {% else %}
               {{ post.title }}
             {% endif %}
@@ -168,9 +161,10 @@ author_profile: true
           <div class="pub-venue">{{ post.venue }}</div>
           {% endif %}
           
-          {% if post.paperurl or post.pdf or post.code or post.video or post.slides or post.dataset %}
+          {% if post.paperurl or post.pdf or post.code or post.video or post.slides or post.dataset or post.doi %}
           <div class="pub-links">
             {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>{% endif %}
+            {% if post.doi %}<a href="https://doi.org/{{ post.doi }}" class="pub-link" target="_blank">DOI</a>{% endif %}
             {% if post.pdf %}<a href="{{ post.pdf }}" class="pub-link" target="_blank">PDF</a>{% endif %}
             {% if post.code %}<a href="{{ post.code }}" class="pub-link" target="_blank">Code</a>{% endif %}
             {% if post.video %}<a href="{{ post.video }}" class="pub-link" target="_blank">Video</a>{% endif %}
@@ -202,6 +196,8 @@ author_profile: true
           <div class="pub-title">
             {% if post.paperurl %}
               <a href="{{ post.paperurl }}" target="_blank">{{ post.title }}</a>
+            {% elsif post.doi %}
+              <a href="https://doi.org/{{ post.doi }}" target="_blank">{{ post.title }}</a>
             {% else %}
               {{ post.title }}
             {% endif %}
@@ -217,9 +213,10 @@ author_profile: true
           <div class="pub-venue">{{ post.venue }}</div>
           {% endif %}
           
-          {% if post.paperurl or post.code or post.video %}
+          {% if post.paperurl or post.code or post.video or post.doi %}
           <div class="pub-links">
             {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>{% endif %}
+            {% if post.doi %}<a href="https://doi.org/{{ post.doi }}" class="pub-link" target="_blank">DOI</a>{% endif %}
             {% if post.code %}<a href="{{ post.code }}" class="pub-link" target="_blank">Code</a>{% endif %}
             {% if post.video %}<a href="{{ post.video }}" class="pub-link" target="_blank">Video</a>{% endif %}
           </div>
@@ -233,3 +230,4 @@ author_profile: true
     {% endfor %}
   </div>
 {% endif %}
+```
