@@ -3,7 +3,7 @@ title: "Effects of AI-Powered Embodied Avatars on Communication Quality and Soci
 collection: publications
 category: manuscripts
 permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'In this paper, we introduce AVAGENTs, AI-powered virtual avatars that replicate users' verbal and nonverbal cues from recordings of past meetings. Avagents can interpret meeting context and generate appropriate responses to questions posed by asynchronous viewers.'
+excerpt: "In this paper, we introduce AVAGENTs, AI-powered virtual avatars that replicate users' verbal and nonverbal cues from recordings of past meetings. Avagents can interpret meeting context and generate appropriate responses to questions posed by asynchronous viewers."
 date: 2025-10-02
 venue: 'IEEE Transactions on Visualization and Computer Graphics'
 #slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
