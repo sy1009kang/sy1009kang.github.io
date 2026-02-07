@@ -10,111 +10,131 @@ redirect_from:
 {% include base_path %}
 
 <style>
-.about-section { margin-top: 1.75rem; }
-.about-section h2 { margin-bottom: .75rem; padding-bottom: .35rem; border-bottom: 1px solid #eee; }
+.about-section { margin-top: 2.5rem; }
+.about-section h2 { 
+  margin-bottom: 1.2rem; 
+  padding-bottom: .5rem; 
+  border-bottom: 2px solid #333; 
+  font-size: 1.5rem;
+}
 
 .intro-block {
   margin-bottom: 1.5rem;
-  line-height: 1.7;
+  line-height: 1.75;
   color: #333;
 }
 
-.intro-block p {
-  margin-bottom: 1rem;
-}
-
-.intro-block strong {
-  font-weight: 600;
-}
-
-.tags {
-  margin: 1rem 0;
-}
-
+.tags { margin: 1.2rem 0; }
 .tag { 
   display: inline-block; 
-  padding: .25rem .6rem; 
-  background: #f5f5f5;
-  color: #555;
-  border-radius: 3px; 
+  padding: .3rem .7rem; 
+  background: #f0f0f0;
+  color: #444;
+  border-radius: 4px; 
   font-size: .85em; 
   margin-right: .5rem;
   margin-bottom: .5rem;
+  font-weight: 500;
 }
 
-.links {
-  margin: 1rem 0;
-}
-
-.links a {
-  color: #333;
-  text-decoration: none;
-  border-bottom: 1px solid #333;
-  margin-right: 1rem;
-}
-
-.links a:hover {
-  border-bottom: 2px solid #333;
+/* News Section Styling 개선 */
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .news-item {
-  margin: .8rem 0;
-  padding-bottom: .8rem;
-  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  background: #fcfcfc;
+  border-left: 4px solid #333;
+  border-radius: 0 6px 6px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.news-item:last-child {
-  border-bottom: none;
+.news-content {
+  flex: 1;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.news-title {
+  font-weight: 700;
+  color: #222;
+  font-size: 1.05rem;
 }
 
 .news-date {
   display: inline-block;
-  padding: .15rem .5rem;
-  background: #f5f5f5;
+  padding: .2rem .6rem;
+  background: #eee;
   color: #666;
-  border-radius: 3px;
-  font-size: .85em;
-  margin-right: .5rem;
+  border-radius: 4px;
+  font-size: .8em;
   font-weight: 600;
+  white-space: nowrap;
 }
 
-.news-text {
+.news-desc {
   color: #555;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .research-points {
-  margin: 1rem 0 1rem 1.5rem;
+  margin: 1.2rem 0 1.2rem 1.5rem;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .research-points li {
-  margin-bottom: .5rem;
-  color: #555;
+  margin-bottom: 0.8rem;
+  color: #444;
   line-height: 1.6;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.research-points li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #333;
+  font-weight: bold;
 }
 
 .quick-links {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 .quick-link {
   display: inline-block;
-  margin-right: .6rem;
+  margin-right: .8rem;
   margin-bottom: .5rem;
-  padding: .35rem .8rem;
-  background: #f5f5f5;
-  color: #333;
+  padding: .5rem 1rem;
+  background: #333;
+  color: #fff !important;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: .9em;
+  transition: background 0.2s ease;
 }
 
 .quick-link:hover {
-  background: #e5e5e5;
+  background: #555;
+  text-decoration: none;
 }
 </style>
 
-<!-- Introduction -->
 <div class="intro-block">
   <p>
     I am a Ph.D. candidate at <strong>KAIST</strong> Ubiquitous Virtual Reality Lab, specializing in <strong>avatar-mediated communication</strong> and <strong>empathic computing</strong> for AR/VR. My work investigates how people perceive and communicate through avatars, and how we can design socially effective avatar behaviors—especially in <strong>asynchronous</strong> and mediated XR scenarios.
@@ -129,31 +149,48 @@ redirect_from:
   </div>
 </div>
 
-<!-- Recent & Upcoming -->
 <div class="about-section">
   <h2>🚀 Recent & Upcoming News</h2>
 
-  <div class="news-text">
-    📍 <strong>Visiting Researcher @ Georgia Institute of Technology</strong>
-    <span class="news-date">Dec 2025 – Apr 2026</span><br>
-    School of Interactive Computing · Collaborating with <strong>Prof. Yalong Yang</strong>
-  </div>
+  <div class="news-container">
+    <div class="news-item">
+      <div class="news-content">
+        <div class="news-header">
+          <span class="news-title">📍 Visiting Researcher @ Georgia Tech</span>
+          <span class="news-date">Dec 2025 – Apr 2026</span>
+        </div>
+        <div class="news-desc">
+          School of Interactive Computing · Collaborating with <strong>Prof. Yalong Yang</strong>
+        </div>
+      </div>
+    </div>
 
-  <div class="news-text">
-    🎤 <strong>Three TVCG Papers @ IEEE VR 2026 (Daegu, Korea)</strong><br>
-    Three papers (1 first-author, 2 co-author) will be published in <strong>IEEE TVCG</strong>
-    and presented at IEEE VR 2026.
-  </div>
+    <div class="news-item">
+      <div class="news-content">
+        <div class="news-header">
+          <span class="news-title">🎤 Three TVCG Papers @ IEEE VR 2026</span>
+          <span class="news-date">Mar 2026</span>
+        </div>
+        <div class="news-desc">
+          Three papers (1 first-author, 2 co-author) will be published in <strong>IEEE TVCG</strong> and presented at IEEE VR 2026 in Daegu, Korea.
+        </div>
+      </div>
+    </div>
 
-  <div class="news-text">
-    🎓 <strong>Ph.D. Defense</strong><br>
-    Public presentation details will be announced soon.
+    <div class="news-item">
+      <div class="news-content">
+        <div class="news-header">
+          <span class="news-title">🎓 Ph.D. Defense</span>
+          <span class="news-date">Coming Soon</span>
+        </div>
+        <div class="news-desc">
+          Public presentation details and schedule will be announced soon.
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-
-
-<!-- Research Snapshot -->
 <div class="about-section">
   <h2>🔍 Research Snapshot</h2>
   
@@ -161,46 +198,28 @@ redirect_from:
     <p><strong>Theme:</strong> Understanding and designing human communication in immersive XR.</p>
 
     <p>
-      My research lies at the intersection of <strong>human–computer interaction</strong>, <strong>immersive XR systems</strong>,
-      and <strong>social computing</strong>. I study how people <em>perceive</em>, <em>interpret</em>, and <em>trust</em> digital
-      representations of others, and how we can design avatar-mediated systems that support natural, meaningful, and socially appropriate
-      communication beyond physical co-presence.
+      My research lies at the intersection of <strong>human–computer interaction</strong>, <strong>immersive XR systems</strong>, and <strong>social computing</strong>. I study how people <em>perceive</em>, <em>interpret</em>, and <em>trust</em> digital representations of others.
     </p>
 
-    <p>
-      More broadly, I aim to develop interaction techniques and design guidelines that enhance <strong>social presence</strong>,
-      <strong>communication quality</strong>, and <strong>user agency</strong> in future XR platforms—grounded in user-centered
-      experimentation and system building.
-    </p>
+    <ul class="research-points">
+      <li>
+        <strong>Avatar-mediated communication:</strong> Investigating nonverbal cues (facial expressions, gaze, timing) and their impact on rapport and social presence.
+      </li>
+      <li>
+        <strong>Human perception in XR:</strong> Examining identity, agency, and trust when interacting with virtual representations.
+      </li>
+      <li>
+        <strong>Interaction design:</strong> Developing expressive and context-aware avatar behaviors for diverse communication tasks.
+      </li>
+      <li>
+        <strong>Evaluation:</strong> Conducting mixed-method user studies to assess behavioral and experiential outcomes in XR.
+      </li>
+    </ul>
+  </div>
+</div>
 
-<ul class="research-points">
-  <li>
-    <strong>Avatar-mediated communication:</strong>
-    investigating how avatars convey nonverbal cues such as facial expressions, gaze, and timing,
-    and how these cues shape social presence, rapport, and communication quality in XR environments.
-  </li>
-  <li>
-    <strong>Human perception in XR:</strong>
-    examining how users perceive identity, agency, and social connection when interacting with
-    virtual representations of themselves and others, including issues of trust and self-identification.
-  </li>
-  <li>
-    <strong>Interaction design:</strong>
-    designing and evaluating interaction techniques that enable expressive, reliable, and
-    context-aware avatar behaviors across different tasks and communication scenarios.
-  </li>
-  <li>
-    <strong>Evaluation:</strong>
-    conducting rigorous user studies using mixed-method approaches—combining quantitative metrics
-    with qualitative insights—to assess social, behavioral, and experiential outcomes in XR systems.
-  </li>
-</ul>
-
-
-<!-- Selected Links -->
 <div class="about-section">
   <h2>📌 Quick Links</h2>
-  
   <div class="quick-links">
     <a class="quick-link" href="{{ '/publications/' | relative_url }}">Publications</a>
     <a class="quick-link" href="{{ '/cv/' | relative_url }}">CV</a>
