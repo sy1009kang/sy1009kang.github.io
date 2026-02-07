@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/2010-10-01-paper-title-number-2
 excerpt: "In this paper, we introduce AVAGENTs, AI-powered virtual avatars that replicate users' verbal and nonverbal cues from recordings of past meetings. Avagents can interpret meeting context and generate appropriate responses to questions posed by asynchronous viewers."
 date: 2025-10-02
-venue: 'IEEE Transactions on Visualization and Computer Graphics'
+venue: 'IEEE Transactions on Visualization and Computer Graphics, presented at IEEE ISMAR 2025'
 #slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
 #paperurl: 'https://academicpages.github.io/files/paper2.pdf'
 citation: 'H. Nam, M. Sarvesh, S. Kang, W. Woo and K. Kim, "Effects of AI-Powered Embodied Avatars on Communication Quality and Social Connection in Asynchronous Virtual Meetings," in IEEE Transactions on Visualization and Computer Graphics, vol. 31, no. 11, pp. 10152-10162, Nov. 2025, doi: 10.1109/TVCG.2025.3616761.'
