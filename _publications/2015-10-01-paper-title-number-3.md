@@ -8,8 +8,8 @@ date: 2026-03-20
 venue: "IEEE Transactions on Visualization and Computer Graphics (TVCG)"
 presentation: "IEEE VR 2026"
 arxiv: 2602.01729
+paperurl: "https://arxiv.org/abs/2602.01729"
 #slidesurl: "https://academicpages.github.io/files/slides3.pdf"
-#paperurl: "https://academicpages.github.io/files/paper3.pdf"
 ---
 
 
