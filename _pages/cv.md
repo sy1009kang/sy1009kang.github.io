@@ -246,17 +246,20 @@ redirect_from:
 <div class="entry">
   <div class="entry-header">
     <h3 class="entry-title">Student Volunteer</h3>
-    <p class="entry-org">IEEE International Symposium on Mixed and Augmented Reality (ISMAR 2023,2024)</p>
-    <p class="entry-org">IEEE Conference on Virtual Reality and 3D User Interfaces (IEEE VR 2024,2025)</p>
+    <p class="entry-org">IEEE International Symposium on Mixed and Augmented Reality (ISMAR 2023, 2024)</p>
+    <p class="entry-org">IEEE Conference on Virtual Reality and 3D User Interfaces (IEEE VR 2024, 2025)</p>
   </div>
 </div>
 
 <div class="entry">
   <div class="entry-header">
     <h3 class="entry-title">Reveiwer</h3>
-    <p class="entry-org"> [2024] IEEE VR, ISMAR </p>
-    <p class="entry-org"> [2025] IEEE TVCG, VR, ISMAR, IEEE Transactions on Affective Computing, PRESENCE: Virtual and Augmented Reality </p>
-    <p class="entry-org"> [2026] IEEE VR, CHI </p>
+    <p class="entry-org"> IEEE Conference on Virtual Reality and 3D User Interfaces (VR) [2024] [2025] </p>
+     <p class="entry-org"> IEEE International Symposium on Mixed and Augmented Reality (ISMAR) [2024] [2025] </p>
+    <p class="entry-org"> IEEE Transactions on Visualization and Computer Graphics (TVCG) [2025] </p>
+    <p class="entry-org"> IEEE Transactions on Affective Computing [2025] </p>
+    <p class="entry-org"> PRESENCE: Virtual and Augmented Reality [2025] </p>
+    <p class="entry-org"> ACM Conference on Human Factors in Computing Systems (CHI) [2026] </p>
   </div>
 </div>
 
