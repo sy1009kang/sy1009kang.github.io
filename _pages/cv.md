@@ -296,7 +296,7 @@ redirect_from:
         Effects of AI-Powered Embodied Avatars on Communication Quality and Social Connection in Asynchronous Virtual Meetings
       </a>
       <div class="pub-list-venue">
-        <em>IEEE Transactions on Visualization and Computer Graphics</em> 2025, presented at IEEE ISMAR 2025
+        <em>IEEE Transactions on Visualization and Computer Graphics</em>, presented at IEEE ISMAR 2025
       </div>
     </li>
 
@@ -305,7 +305,7 @@ redirect_from:
         OFERA: Blendshape-driven 3D Gaussian Control for Occluded Facial Expression to Realistic Avatars in VR
       </a>
       <div class="pub-list-venue">
-        <em>IEEE Transactions on Visualization and Computer Graphics</em> 2026, presented at IEEE VR 2026
+        <em>IEEE Transactions on Visualization and Computer Graphics</em>, presented at IEEE VR 2026
       </div>
     </li>
   </ul>
