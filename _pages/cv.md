@@ -166,7 +166,6 @@ redirect_from:
 
 .pub-list-title:hover {
   color: #555;
-  text-decoration: underline;
 }
 
 .pub-list-venue {
@@ -275,8 +274,8 @@ redirect_from:
     <li class="pub-list-item">
       <a href="{{ '/publication/how-collaboration-context' | relative_url }}" class="pub-list-title">
         How Collaboration Context and Personality Traits Shape the Social Norms of Human-to-Avatar Identity Representation
+        <span class="tag" style="background: #fff3cd; color: #856404; margin-left: 0.5rem; font-size: 0.75em;">🏆 Best Paper Award</span>
       </a>
-      <span class="tag" style="background: #fff3cd; color: #856404; margin-left: 0.5rem;">🏆 Best Paper Award</span>
       <div class="pub-list-venue">
         <em>IEEE Transactions on Visualization and Computer Graphics (TVCG)</em>, presented at IEEE VR 2025
       </div>
@@ -296,7 +295,7 @@ redirect_from:
         Effects of AI-Powered Embodied Avatars on Communication Quality and Social Connection in Asynchronous Virtual Meetings
       </a>
       <div class="pub-list-venue">
-        <em>IEEE Transactions on Visualization and Computer Graphics</em>, presented at IEEE ISMAR 2025
+        <em>IEEE Transactions on Visualization and Computer Graphics</em> 2025, presented at IEEE ISMAR 2025
       </div>
     </li>
 
@@ -305,7 +304,7 @@ redirect_from:
         OFERA: Blendshape-driven 3D Gaussian Control for Occluded Facial Expression to Realistic Avatars in VR
       </a>
       <div class="pub-list-venue">
-        <em>IEEE Transactions on Visualization and Computer Graphics</em>, presented at IEEE VR 2026
+        <em>IEEE Transactions on Visualization and Computer Graphics</em> 2026, presented at IEEE VR 2026
       </div>
     </li>
   </ul>
@@ -314,6 +313,7 @@ redirect_from:
 <div class="about-section">
   <h2>📌 Quick Links</h2>
   <div class="quick-links">
+    <a class="quick-link" href="{{ '/publications/' | relative_url }}">Publications</a>
     <a class="quick-link" href="{{ '/cv/' | relative_url }}">CV</a>
     {% if site.author.googlescholar %}
       <a class="quick-link" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>
