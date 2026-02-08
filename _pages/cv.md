@@ -299,7 +299,6 @@ redirect_from:
 <div class="about-section">
   <h2>📌 Quick Links</h2>
   <div class="quick-links">
-    <a class="quick-link" href="{{ '/publications/' | relative_url }}">Publications</a>
     <a class="quick-link" href="{{ '/cv/' | relative_url }}">CV</a>
     {% if site.author.googlescholar %}
       <a class="quick-link" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>
