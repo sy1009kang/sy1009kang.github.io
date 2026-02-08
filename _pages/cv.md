@@ -138,6 +138,42 @@ redirect_from:
   background: #555;
   text-decoration: none;
 }
+
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
+.pub-list-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.pub-list-item:last-child {
+  border-bottom: none;
+}
+
+.pub-list-title {
+  font-weight: 600;
+  color: #222;
+  text-decoration: none;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.pub-list-title:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+.pub-list-venue {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
 </style>
 
 <div class="intro-block">
@@ -226,79 +262,59 @@ redirect_from:
 <div class="about-section">
   <h2>📄 Selected Publications</h2>
   
-  <div class="news-container">
-    <div class="news-item">
-      <div class="news-content">
-        <div class="news-header">
-          <a href="https://arxiv.org/abs/2602.01729" target="_blank" class="news-title" style="text-decoration: none; color: #222;">
-            Streamlined Facial Data Collection based on Utterance and Emotional Data for Human-to-Avatar Reconstruction
-          </a>
-        </div>
-        <div class="news-desc">
-          <em>IEEE Transactions on Visualization and Computer Graphics (TVCG)</em>, presented at IEEE VR 2026
-        </div>
+  <ul class="pub-list">
+    <li class="pub-list-item">
+      <a href="https://arxiv.org/abs/2602.01729" target="_blank" class="pub-list-title">
+        Streamlined Facial Data Collection based on Utterance and Emotional Data for Human-to-Avatar Reconstruction
+      </a>
+      <div class="pub-list-venue">
+        <em>IEEE Transactions on Visualization and Computer Graphics (TVCG)</em>, presented at IEEE VR 2026
       </div>
-    </div>
+    </li>
 
-    <div class="news-item">
-      <div class="news-content">
-        <div class="news-header">
-          <a href="{{ '/publication/how-collaboration-context' | relative_url }}" class="news-title" style="text-decoration: none; color: #222;">
-            How Collaboration Context and Personality Traits Shape the Social Norms of Human-to-Avatar Identity Representation
-          </a>
-          <span class="tag" style="background: #fff3cd; color: #856404; margin-left: 0.5rem;">🏆 Best Paper Award</span>
-        </div>
-        <div class="news-desc">
-          <em>IEEE Transactions on Visualization and Computer Graphics (TVCG)</em>, presented at IEEE VR 2025
-        </div>
+    <li class="pub-list-item">
+      <a href="{{ '/publication/how-collaboration-context' | relative_url }}" class="pub-list-title">
+        How Collaboration Context and Personality Traits Shape the Social Norms of Human-to-Avatar Identity Representation
+      </a>
+      <span class="tag" style="background: #fff3cd; color: #856404; margin-left: 0.5rem;">🏆 Best Paper Award</span>
+      <div class="pub-list-venue">
+        <em>IEEE Transactions on Visualization and Computer Graphics (TVCG)</em>, presented at IEEE VR 2025
       </div>
-    </div>
+    </li>
 
-    <div class="news-item">
-      <div class="news-content">
-        <div class="news-header">
-          <a href="{{ '/publication/emotion-based-prioritized' | relative_url }}" class="news-title" style="text-decoration: none; color: #222;">
-            The Influence of Emotion-based Prioritized Facial Expressions on Social Presence in Avatar-mediated Remote Communication
-          </a>
-        </div>
-        <div class="news-desc">
-          <em>2024 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)</em>
-        </div>
+    <li class="pub-list-item">
+      <a href="{{ '/publication/emotion-based-prioritized' | relative_url }}" class="pub-list-title">
+        The Influence of Emotion-based Prioritized Facial Expressions on Social Presence in Avatar-mediated Remote Communication
+      </a>
+      <div class="pub-list-venue">
+        <em>2024 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)</em>
       </div>
-    </div>
+    </li>
 
-    <div class="news-item">
-      <div class="news-content">
-        <div class="news-header">
-          <a href="{{ '/publication/ai-powered-embodied-avatars' | relative_url }}" class="news-title" style="text-decoration: none; color: #222;">
-            Effects of AI-Powered Embodied Avatars on Communication Quality and Social Connection in Asynchronous Virtual Meetings
-          </a>
-        </div>
-        <div class="news-desc">
-          <em>IEEE Transactions on Visualization and Computer Graphics</em> 2025, presented at IEEE ISMAR 2025
-        </div>
+    <li class="pub-list-item">
+      <a href="{{ '/publication/ai-powered-embodied-avatars' | relative_url }}" class="pub-list-title">
+        Effects of AI-Powered Embodied Avatars on Communication Quality and Social Connection in Asynchronous Virtual Meetings
+      </a>
+      <div class="pub-list-venue">
+        <em>IEEE Transactions on Visualization and Computer Graphics</em> 2025, presented at IEEE ISMAR 2025
       </div>
-    </div>
+    </li>
 
-    <div class="news-item">
-      <div class="news-content">
-        <div class="news-header">
-          <a href="{{ '/publication/ofera' | relative_url }}" class="news-title" style="text-decoration: none; color: #222;">
-            OFERA: Blendshape-driven 3D Gaussian Control for Occluded Facial Expression to Realistic Avatars in VR
-          </a>
-          <span class="tag" style="background: #d4edda; color: #155724; margin-left: 0.5rem;">🎤 Oral</span>
-        </div>
-        <div class="news-desc">
-          <em>IEEE Transactions on Visualization and Computer Graphics</em> 2026, presented at IEEE VR 2026
-        </div>
+    <li class="pub-list-item">
+      <a href="{{ '/publication/ofera' | relative_url }}" class="pub-list-title">
+        OFERA: Blendshape-driven 3D Gaussian Control for Occluded Facial Expression to Realistic Avatars in VR
+      </a>
+      <div class="pub-list-venue">
+        <em>IEEE Transactions on Visualization and Computer Graphics</em> 2026, presented at IEEE VR 2026
       </div>
-    </div>
-  </div>
+    </li>
+  </ul>
 </div>
 
 <div class="about-section">
   <h2>📌 Quick Links</h2>
   <div class="quick-links">
+    <a class="quick-link" href="{{ '/publications/' | relative_url }}">Publications</a>
     <a class="quick-link" href="{{ '/cv/' | relative_url }}">CV</a>
     {% if site.author.googlescholar %}
       <a class="quick-link" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>
