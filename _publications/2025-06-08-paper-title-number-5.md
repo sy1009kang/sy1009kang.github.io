@@ -6,6 +6,7 @@ permalink: /publication/2024-02-17-paper-title-number-4
 excerpt: 'We propose OFERA, a novel framework for real-time expression control of photorealistic Gaussian head avatars for VR headset users.'
 date: 2026-03-20
 venue: 'IEEE Transactions on Visualization and Computer Graphics 2026'
+presentation: IEEE VR 2026
 paperurl: '[https://academicpages.github.io/files/paper3.pdf](https://arxiv.org/abs/2602.01748)'
 citation: 'arXiv:2602.01748'
 ---
