@@ -7,7 +7,7 @@ excerpt: "We examine how prioritizing emotion-related facial expressions in avat
 date: 2024-10-21
 venue: "2024 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)"
 paperurl: "https://ieeexplore.ieee.org/abstract/document/10765493"
-doi: 10.1109/ISMAR62088.2024.00131
+#doi: 10.1109/ISMAR62088.2024.00131
 citation: 'S. Kang, H. Song, B. Yoon, K. Kim and W. Woo, "The Influence of Emotion-based Prioritized Facial Expressions on Social Presence in Avatar-mediated Remote Communication," 2024 IEEE International Symposium on Mixed and Augmented Reality (ISMAR), Bellevue, WA, USA, 2024, pp. 1147-1156, doi: 10.1109/ISMAR62088.2024.00131.'
 ---
 
