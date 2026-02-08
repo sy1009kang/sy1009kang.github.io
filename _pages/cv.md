@@ -270,4 +270,3 @@ redirect_from:
 </div>
 
 </div>
-```
