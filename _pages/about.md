@@ -203,7 +203,7 @@ redirect_from:
 
     <ul class="research-points">
       <li>
-        <strong>Avatar-mediated communication:</strong> Investigating nonverbal cues (facial expressions, gaze, timing) and their impact on rapport and social presence.
+        <strong>Avatar-mediated communication:</strong> Investigating nonverbal cues and their impact on communication and social presence.
       </li>
       <li>
         <strong>Human perception in XR:</strong> Examining identity, agency, and trust when interacting with virtual representations.
