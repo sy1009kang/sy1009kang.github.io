@@ -137,7 +137,7 @@ redirect_from:
 
 <div class="intro-block">
   <p>
-    I am a Ph.D. candidate at <strong>KAIST</strong> Ubiquitous Virtual Reality Lab, specializing in <strong>avatar-mediated communication</strong> and <strong>empathic computing</strong> for AR/VR. My work investigates how people perceive and communicate through avatars, and how we can design socially effective avatar behaviors—especially in <strong>asynchronous</strong> and mediated XR scenarios.
+    I am a Ph.D. candidate at <strong>KAIST</strong> Ubiquitous Virtual Reality Lab, specializing in <strong>avatar-mediated communication</strong> and <strong>empathic computing</strong> for AR/VR. My work investigates how people perceive and communicate through avatars, and how we can design socially effective avatar behaviors—especially in asynchronous and mediated XR scenarios.
   </p>
 
   <div class="tags">
