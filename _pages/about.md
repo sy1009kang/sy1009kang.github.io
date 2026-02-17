@@ -198,7 +198,7 @@ redirect_from:
     <p><strong>Theme:</strong> Understanding and designing human communication in immersive XR.</p>
 
     <p>
-      My research lies at the intersection of <strong>human–computer interaction</strong>, <strong>immersive XR systems</strong>, and <strong>social computing</strong>. I study how people <em>perceive</em>, <em>interpret</em>, and <em>trust</em> digital representations of others.
+      My research lies at the intersection of <strong>human–computer interaction</strong>, <strong>immersive XR systems</strong>, and <strong>empathic computing</strong>. I study how people <em>perceive</em>, <em>interpret</em>, and <em>trust</em> digital representations of others.
     </p>
 
     <ul class="research-points">
