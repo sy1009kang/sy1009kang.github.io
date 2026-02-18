@@ -39,9 +39,10 @@
 
   // 2) 기본은 light (사용자가 명시적으로 dark로 저장해둔 경우는 존중)
   try {
-    const t = localStorage.getItem("theme");
-    if (t !== "dark" && t !== "light") localStorage.setItem("theme", "light");
-  } catch (e) {}
+  localStorage.removeItem("theme");  // ← 이 줄 추가
+  localStorage.setItem("theme", "light");
+} catch (e) {}
+
 })();
 </script>
 
