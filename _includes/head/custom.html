@@ -14,4 +14,40 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<!-- Force LIGHT default & disable OS auto dark detection -->
+<script>
+(function () {
+  // 1) prefers-color-scheme만 가로채서 항상 "light"처럼 보이게 함
+  const realMatchMedia = window.matchMedia;
+  window.matchMedia = function (query) {
+    if (typeof query === "string" && query.includes("prefers-color-scheme")) {
+      const isDarkQuery = query.includes("dark");
+      const isLightQuery = query.includes("light");
+      return {
+        media: query,
+        matches: isLightQuery && !isDarkQuery, // dark => false, light => true
+        onchange: null,
+        addListener: function () {},
+        removeListener: function () {},
+        addEventListener: function () {},
+        removeEventListener: function () {},
+        dispatchEvent: function () { return false; }
+      };
+    }
+    return realMatchMedia.call(window, query);
+  };
+
+  // 2) 기본은 light (사용자가 명시적으로 dark로 저장해둔 경우는 존중)
+  try {
+    const t = localStorage.getItem("theme");
+    if (t !== "dark" && t !== "light") localStorage.setItem("theme", "light");
+  } catch (e) {}
+})();
+</script>
+
+<!-- Optional: make built-in form controls etc. use light UI -->
+<style>
+  :root { color-scheme: light; }
+</style>
+
 <!-- end custom head snippets -->
