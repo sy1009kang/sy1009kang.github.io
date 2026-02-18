@@ -172,7 +172,7 @@ redirect_from:
           <span class="news-date">Mar 2026</span>
         </div>
         <div class="news-desc">
-          Three papers (1 first-author, 2 co-author) will be published in IEEE Transactions on Visualization and Computer Graphics (TVCG) and presented at IEEE VR 2026 in Daegu, Korea.
+          Three papers (1 first-author, 2 co-author) will be published in <strong>IEEE Transactions on Visualization and Computer Graphics</strong> and presented at IEEE VR 2026 in Daegu, Korea.
         </div>
       </div>
     </div>
