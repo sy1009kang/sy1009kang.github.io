@@ -173,7 +173,7 @@ redirect_from:
     <p class="entry-org">Georgia Institute of Technology</p>
     <p class="entry-meta">School of Interactive Computing · Advisor: Prof. Yalong Yang</p>
     <p class="entry-date">Dec 2025 – Apr 2026 · Atlanta, USA</p>
-    <p class="entry-meta"><span class="tag">BK21</span><span class="tag">NRF</span></p>
+    <p class="entry-meta"><span class="tag">BK21</span><span class="tag">National Research Foundation of Korea (NRF)</span></p>
   </div>
 
   <div class="sub-entry">
@@ -187,14 +187,14 @@ redirect_from:
     <p class="entry-org">University of Calgary</p>
     <p class="entry-meta">Department of Electrical and Software Engineering · Advisor: Prof. Kangsoo Kim</p>
     <p class="entry-date">Aug 2023 – Feb 2024 · Calgary, Canada</p>
-    <p class="entry-meta"><span class="tag">NRF</span><span class="tag">Mitacs Globalink</span></p>
+    <p class="entry-meta"><span class="tag">National Research Foundation of Korea (NRF)</span><span class="tag">Mitacs Globalink</span></p>
   </div>
 
   <div class="sub-entry">
     <p class="entry-org">University of Southern California</p>
     <p class="entry-meta">Institute for Creative Technologies · Advisor: Prof. Jonathan Gratch</p>
     <p class="entry-date">Dec 2021 – Feb 2022 · Los Angeles, USA</p>
-    <p class="entry-meta"><span class="tag">BK21</span><span class="tag">NRF</span></p>
+    <p class="entry-meta"><span class="tag">BK21</span><span class="tag">National Research Foundation of Korea (NRF)</span></p>
   </div>
 </div>
 
@@ -219,7 +219,7 @@ redirect_from:
     <p class="entry-org">KAIST, KISTI, KICT</p>
     <p class="entry-date">Dec 2021 – Present</p>
   </div>
-  <p class="entry-meta"><span class="tag">National Research Council of Science & Technology, NST</span></p>
+  <p class="entry-meta"><span class="tag">National Research Council of Science & Technology (NST)</span></p>
 </div>
 
 <div class="entry">
@@ -228,7 +228,7 @@ redirect_from:
     <p class="entry-org">KAIST</p>
     <p class="entry-date">Sep 2020 – Nov 2021</p>
   </div>
-  <p class="entry-meta"><span class="tag">National Research Council of Science & Technology, NST</span></p>
+  <p class="entry-meta"><span class="tag">National Research Council of Science & Technology (NST)</span></p>
 </div>
 
 <!-- Service and Leadership -->
