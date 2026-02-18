@@ -235,14 +235,12 @@ redirect_from:
 <div class="section-header">
   <h2><span class="emoji">🤝</span>Service &amp; Leadership</h2>
 </div>
-
 <div class="entry">
   <div class="entry-header">
     <h3 class="entry-title">Student Volunteer Chair</h3>
     <p class="entry-org">IEEE International Symposium on Mixed and Augmented Reality (ISMAR 2025)</p>
   </div>
 </div>
-
 <div class="entry">
   <div class="entry-header">
     <h3 class="entry-title">Student Volunteer</h3>
@@ -250,19 +248,17 @@ redirect_from:
     <p class="entry-org">IEEE Conference on Virtual Reality and 3D User Interfaces (IEEE VR 2024, 2025)</p>
   </div>
 </div>
-
 <div class="entry">
   <div class="entry-header">
-    <h3 class="entry-title">Reveiwer</h3>
-    <p class="entry-org"> IEEE Conference on Virtual Reality and 3D User Interfaces (VR) [2024] [2025] </p>
-     <p class="entry-org"> IEEE International Symposium on Mixed and Augmented Reality (ISMAR) [2024] [2025] </p>
-    <p class="entry-org"> IEEE Transactions on Visualization and Computer Graphics (TVCG) [2025] </p>
-    <p class="entry-org"> IEEE Transactions on Affective Computing [2025] </p>
-    <p class="entry-org"> PRESENCE: Virtual and Augmented Reality [2025] </p>
-    <p class="entry-org"> ACM Conference on Human Factors in Computing Systems (CHI) [2026] </p>
+    <h3 class="entry-title">Reviewer</h3>
+    <p class="entry-org">IEEE Conference on Virtual Reality and 3D User Interfaces (VR) [2024] [2025]</p>
+    <p class="entry-org">IEEE International Symposium on Mixed and Augmented Reality (ISMAR) [2024] [2025]</p>
+    <p class="entry-org">IEEE Transactions on Visualization and Computer Graphics (TVCG) [2025]</p>
+    <p class="entry-org">IEEE Transactions on Affective Computing [2025]</p>
+    <p class="entry-org">PRESENCE: Virtual and Augmented Reality [2025]</p>
+    <p class="entry-org">ACM Conference on Human Factors in Computing Systems (CHI) [2026]</p>
   </div>
 </div>
-
 <div class="entry">
   <div class="entry-header">
     <h3 class="entry-title">Young Standardization Expert</h3>
@@ -274,5 +270,44 @@ redirect_from:
     <li>Presenter and contributor at ISO/IEC JTC 1/SC 24 plenary and working group meetings (Sydney 2023, Paris 2024, Alexandria 2025)</li>
   </ul>
 </div>
+
+<style>
+/* Service & Leadership - 심플 버전 */
+.section-header {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.entry {
+  margin-bottom: 2rem;
+}
+
+.entry-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.entry-org {
+  margin: 0.3rem 0;
+  color: #666;
+}
+
+.entry-date {
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.entry-details {
+  margin-top: 0.8rem;
+  padding-left: 1.2rem;
+}
+
+.entry-details li {
+  margin-bottom: 0.4rem;
+}
+</style>
 
 </div>
