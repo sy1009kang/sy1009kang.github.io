@@ -219,7 +219,7 @@ redirect_from:
     <p class="entry-org">KAIST, KISTI, KICT</p>
     <p class="entry-date">Dec 2021 – Present</p>
   </div>
-  <p class="entry-meta"><span class="tag">NST</span></p>
+  <p class="entry-meta"><span class="tag">National Research Council of Science & Technology, NST</span></p>
 </div>
 
 <div class="entry">
@@ -228,7 +228,7 @@ redirect_from:
     <p class="entry-org">KAIST</p>
     <p class="entry-date">Sep 2020 – Nov 2021</p>
   </div>
-  <p class="entry-meta"><span class="tag">NST</span></p>
+  <p class="entry-meta"><span class="tag">National Research Council of Science & Technology, NST</span></p>
 </div>
 
 <!-- Service and Leadership -->
