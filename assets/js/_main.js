@@ -2,51 +2,54 @@
    Various functions that we want to use within the template
    ========================================================================== */
 
-// 항상 라이트 모드로 고정
-const FORCE_THEME = "light";
-
-// (옵션) 과거에 저장된 theme 값이 남아있으면 다크로 뜰 수 있으니 제거
-// 필요 없으면 이 줄은 지워도 되지만, 한 번은 실행되게 두는 게 안전합니다.
-try {
-  localStorage.removeItem("theme");
-} catch (e) {}
-
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
 // "system". Default is "system".
 let determineThemeSetting = () => {
-  // 강제 라이트
-  return FORCE_THEME;
+  let themeSetting = localStorage.getItem("theme");
+  return (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
 };
 
-// Determine the computed theme, which can be "dark" or "light".
+// Determine the computed theme, which can be "dark" or "light". If the theme setting is
+// "system", the computed theme is determined based on the user's system preference.
 let determineComputedTheme = () => {
-  // 강제 라이트
-  return FORCE_THEME;
+  let themeSetting = determineThemeSetting();
+  if (themeSetting != "system") {
+    return themeSetting;
+  }
+  // ✅ OS 자동 감지 끔 → system이면 light로 처리
+  return "light";
 };
 
-// detect OS/browser preference (사용 안 함: 강제 라이트)
-const browserPref = FORCE_THEME;
+// ✅ OS/browser preference 감지 끔: 기본값을 light로 고정
+const browserPref = "light";
 
 // Set the theme on page load or when explicitly called
 let setTheme = (theme) => {
-  // 어떤 인자가 오더라도 라이트로 고정
-  const use_theme = FORCE_THEME;
+  const use_theme =
+    theme ||
+    localStorage.getItem("theme") ||
+    $("html").attr("data-theme") ||
+    browserPref; // ✅ 이제 항상 light로 fallback
 
   if (use_theme === "dark") {
-    // (여긴 도달하지 않음)
     $("html").attr("data-theme", "dark");
     $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
+  } else if (use_theme === "light") {
+    $("html").removeAttr("data-theme");
+    $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
   } else {
-    // light
+    // theme 값이 system 등으로 들어와도 light로 처리
     $("html").removeAttr("data-theme");
     $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
   }
 };
 
-// Toggle the theme manually (사용 안 함: 강제 라이트)
+// Toggle the theme manually
 var toggleTheme = () => {
-  // 아무것도 하지 않음
-  setTheme(FORCE_THEME);
+  const current_theme = $("html").attr("data-theme");
+  const new_theme = current_theme === "dark" ? "light" : "dark";
+  localStorage.setItem("theme", new_theme);
+  setTheme(new_theme);
 };
 
 /* ==========================================================================
@@ -67,13 +70,11 @@ if (plotlyElements.length > 0) {
         let chartElement = document.createElement("div");
         elem.parentElement.after(chartElement);
 
-        // ✅ 항상 라이트 Plotly 테마 적용
-        const theme = plotlyLightLayout;
+        // ✅ system(OS) 기반 계산은 이제 light가 기본
+        const theme = (determineComputedTheme() === "dark") ? plotlyDarkLayout : plotlyLightLayout;
 
         if (jsonData.layout) {
-          jsonData.layout.template = (jsonData.layout.template)
-            ? { ...theme, ...jsonData.layout.template }
-            : theme;
+          jsonData.layout.template = (jsonData.layout.template) ? { ...theme, ...jsonData.layout.template } : theme;
         } else {
           jsonData.layout = { template: theme };
         }
@@ -92,7 +93,9 @@ $(document).ready(function () {
   const scssLarge = 925;          // pixels, from /_sass/_themes.scss
   const scssMastheadHeight = 70;  // pixels, from the current theme (e.g., /_sass/theme/_default.scss)
 
-  // ✅ 페이지 로드시 무조건 라이트
+  // ✅ 기본 theme을 light로 강제 (localStorage에 theme 없을 때)
+  // 만약 예전에 theme='dark'가 저장돼 있으면 그게 우선됩니다.
+  // "무조건 처음은 light"로 보이고 싶으면 아래 옵션도 함께 켜세요.
   setTheme("light");
 
   // ❌ OS 다크/라이트 변경 감지로 자동전환하는 리스너 제거
@@ -103,8 +106,8 @@ $(document).ready(function () {
   //         }
   //       });
 
-  // ❌ 토글 버튼 리스너 제거 (버튼도 이미 삭제했지만 안전하게)
-  // $('#theme-toggle').on('click', toggleTheme);
+  // Enable the theme toggle (버튼을 남겨두는 경우에만 의미 있음)
+  $('#theme-toggle').on('click', toggleTheme);
 
   // Enable the sticky footer
   var bumpIt = function () {
