@@ -41,3 +41,15 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+
+#site-nav .visible-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+#site-nav .masthead__menu-item {
+  white-space: nowrap;
+}
+
