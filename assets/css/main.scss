@@ -59,3 +59,9 @@
   display: none !important;
 }
 
+/* Force-hide Sitemap and Feed links (AcademicPages 구조 대응) */
+.page__footer a[href*="sitemap"],
+.page__footer a[href*="feed"] {
+  display: none !important;
+}
+
