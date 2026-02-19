@@ -66,6 +66,10 @@
 }
 
 
+/* Hide the Powered by sentence specifically */
+.page__footer-copyright span {
+  display: none !important;
+}
 
 
 
