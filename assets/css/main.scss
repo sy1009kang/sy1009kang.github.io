@@ -65,4 +65,12 @@
   display: none !important;
 }
 
+/* Hide only the "Powered by Jekyll & AcademicPages" part */
+.page__footer-copyright a[href*="jekyll"],
+.page__footer-copyright a[href*="academicpages"],
+.page__footer-copyright a[href*="mmistakes"] {
+  display: none !important;
+}
+
+
 
