@@ -53,3 +53,9 @@
   white-space: nowrap;
 }
 
+/* Hide footer "Sitemap" and "Follow: Feed" */
+.page__footer-follow,
+.page__footer-sitemap {
+  display: none !important;
+}
+
