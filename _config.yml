@@ -42,9 +42,10 @@ comments:
 
 # Analytics (Google Analytics 4 사용 시 ID 입력)
 analytics:
-  provider: "google-analytics"
+  provider: "google-analytics-4"
   google:
     tracking_id: "G-VPM6RDK4MB"
+
 
 
 # Reading Files
