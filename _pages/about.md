@@ -137,7 +137,7 @@ redirect_from:
 
 <div class="intro-block">
   <p>
-    My research explores <strong>Human–Agent Interaction in XR</strong>, with a focus on a future in which people create AI agents that represent them and communicate on their behalf in immersive environments. I develop communication frameworks for these human-representative agents, particularly for mediated and asynchronous interactions in which users may not be physically present or available in real time. Ultimately, I aim to advance communication technologies that are more personalized, accessible, and socially effective while ensuring that users retain agency over, and trust in, how they are represented.
+    My research explores <strong>Human–Agent Interaction in XR</strong>, focusing on a future in which people create AI agents that represent and communicate on their behalf in immersive environments. I develop new communication frameworks for these human-representative agents, particularly in mediated and asynchronous interactions where users may not be physically present or available in real time. Ultimately, I aim to contribute to future communication technologies that are more personalized, accessible, and socially effective, while ensuring that users retain agency and trust in how they are represented.
   </p>
 
   <div class="tags">
@@ -157,10 +157,10 @@ redirect_from:
       <div class="news-content">
         <div class="news-header">
           <span class="news-title">🏫 Postdoctoral Associate @ University of Georgia</span>
-          <span class="news-date">Starting Sep 2026</span>
+          <span class="news-date">Sep 2026 – Present</span>
         </div>
         <div class="news-desc">
-          I will begin a new position as a <strong>Postdoctoral Associate</strong> at the University of Georgia in September 2026.
+          Beginning a new position as a <strong>Postdoctoral Associate</strong> at the University of Georgia.
         </div>
       </div>
     </div>
@@ -184,7 +184,7 @@ redirect_from:
           <span class="news-date">Dec 2025 – Apr 2026</span>
         </div>
         <div class="news-desc">
-          Conducted research in the School of Interactive Computing in collaboration with <strong>Prof. Yalong Yang</strong>.
+          School of Interactive Computing · Collaborating with <strong>Prof. Yalong Yang</strong>
         </div>
       </div>
     </div>
@@ -196,7 +196,7 @@ redirect_from:
           <span class="news-date">Mar 2026</span>
         </div>
         <div class="news-desc">
-          Three papers (one first-author and two co-authored) were published in <strong>IEEE Transactions on Visualization and Computer Graphics</strong> and presented at IEEE VR 2026 in Daegu, Korea.
+          Three papers (1 first-author, 2 co-author) will be published in <strong>IEEE Transactions on Visualization and Computer Graphics</strong> and presented at IEEE VR 2026 in Daegu, Korea.
         </div>
       </div>
     </div>
@@ -211,12 +211,12 @@ redirect_from:
     <p><strong>Theme:</strong> Designing human-centered communication between people and their representative agents in XR.</p>
 
     <p>
-      My research lies at the intersection of <strong>human–computer interaction</strong>, <strong>XR</strong>, and <strong>social AI</strong>. I investigate how human-representative agents can convey their users’ identities, intentions, emotions, and communication styles while adapting to diverse social contexts.
+      My research lies at the intersection of <strong>human–computer interaction</strong>, <strong>XR</strong>, and <strong>social AI</strong>. I investigate how human-representative agents can convey users’ identities, intentions, emotions, and communication styles while adapting to different social contexts.
     </p>
 
     <ul class="research-points">
       <li>
-        <strong>Human-representative agents:</strong> Exploring how avatars and AI agents can represent people and communicate on their behalf.
+        <strong>Human-representative agents:</strong> Exploring how avatars and AI agents can represent and communicate on behalf of people.
       </li>
       <li>
         <strong>Agent-mediated communication:</strong> Developing new frameworks for mediated and asynchronous interaction across time and space.
