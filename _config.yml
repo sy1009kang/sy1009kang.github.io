@@ -14,11 +14,11 @@ author:
   avatar           : "profile.png" # /images/profile.png 경로에 사진을 넣으세요
   name             : "Seoyoung Kang"
   pronouns         : "she/her"
-  bio              : "AR/VR and HCI Researcher, Ph.D. Candidate at KAIST."
-  location         : "Daejeon, Korea" # 현재 거주지 반영
-  employer         : "KAIST" # 소속 대학/기관명으로 수정하세요
+  bio              : "Postdoctoral Associate at the University of Georgia, specializing in AR/VR and HCI."
+  location         : "Athens, Georgia, USA"
+  employer         : "University of Georgia"
   uri              : 
-  email            : "seoyoung.kang@kaist.ac.kr" # 실제 이메일로 수정
+  email            : "sy1009kang@gmail.com # 실제 이메일로 수정
 
   # Academic websites
   googlescholar    : "https://scholar.google.com/citations?user=j33Q5tkAAAAJ&hl=ko&oi=ao"

@@ -139,7 +139,7 @@ redirect_from:
     <h3 class="entry-title">Ph.D. in Culture Technology</h3>
     <p class="entry-org">Korea Advanced Institute of Science and Technology (KAIST)</p>
     <p class="entry-meta">Ubiquitous Virtual Reality (UVR) Lab · Advisor: Prof. Woontack Woo</p>
-    <p class="entry-date">Aug 2022 – Present (Expected Aug 2026) · Daejeon, Korea</p>
+    <p class="entry-date">Aug 2022 – Aug 2026 · Daejeon, Korea</p>
   </div>
 </div>
 
@@ -163,6 +163,15 @@ redirect_from:
 <!-- Work Experience -->
 <div class="section-header">
   <h2><span class="emoji">💼</span>Work Experience</h2>
+</div>
+
+<!-- Postdoctoral Associate -->
+<div class="entry">
+  <div class="entry-header">
+    <h3 class="entry-title">Postdoctoral Associate</h3>
+    <p class="entry-org">University of Georgia</p>
+    <p class="entry-date">Sep 2026 – Present · Athens, Georgia, USA</p>
+  </div>
 </div>
 
 <!-- Visiting Researcher Group -->

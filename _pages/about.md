@@ -137,7 +137,7 @@ redirect_from:
 
 <div class="intro-block">
   <p>
-    I am a Ph.D. candidate at <strong>KAIST</strong> Ubiquitous Virtual Reality Lab, specializing in <strong>avatar-mediated communication</strong> and <strong>empathic computing</strong> for AR/VR. My work investigates how people perceive and communicate through avatars, and how we can design socially effective avatar behaviors—especially in asynchronous and mediated XR scenarios.
+    I am a <strong>Postdoctoral Associate at the University of Georgia</strong>. I received my Ph.D. in Culture Technology from <strong>KAIST</strong> in August 2026, where I conducted research in the Ubiquitous Virtual Reality Lab. My research specializes in <strong>avatar-mediated communication</strong> and <strong>empathic computing</strong> for AR/VR, investigating how people perceive and communicate through avatars and how we can design socially effective avatar behaviors—especially in asynchronous and mediated XR scenarios.
   </p>
 
   <div class="tags">
@@ -153,6 +153,30 @@ redirect_from:
   <h2>🚀 Recent & Upcoming News</h2>
 
   <div class="news-container">
+    <div class="news-item">
+      <div class="news-content">
+        <div class="news-header">
+          <span class="news-title">🏫 Postdoctoral Associate @ University of Georgia</span>
+          <span class="news-date">Sep 2026 – Present</span>
+        </div>
+        <div class="news-desc">
+          Beginning a new position as a <strong>Postdoctoral Associate</strong> at the University of Georgia.
+        </div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-content">
+        <div class="news-header">
+          <span class="news-title">🎓 Ph.D. Graduation from KAIST</span>
+          <span class="news-date">Aug 2026</span>
+        </div>
+        <div class="news-desc">
+          Received a Ph.D. in Culture Technology from <strong>KAIST</strong>.
+        </div>
+      </div>
+    </div>
+
     <div class="news-item">
       <div class="news-content">
         <div class="news-header">
@@ -177,17 +201,6 @@ redirect_from:
       </div>
     </div>
 
-    <div class="news-item">
-      <div class="news-content">
-        <div class="news-header">
-          <span class="news-title">🎓 Ph.D. Defense</span>
-          <span class="news-date">Coming Soon</span>
-        </div>
-        <div class="news-desc">
-          Public presentation details and schedule will be announced soon.
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
