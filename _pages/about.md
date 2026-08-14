@@ -157,7 +157,7 @@ redirect_from:
       <div class="news-content">
         <div class="news-header">
           <span class="news-title">🏫 Postdoctoral Associate @ University of Georgia</span>
-          <span class="news-date">Sep 2026 – Present</span>
+          <span class="news-date">Starting Sep 2026</span>
         </div>
         <div class="news-desc">
           I will begin a new position as a <strong>Postdoctoral Associate</strong> at the University of Georgia in September 2026.
