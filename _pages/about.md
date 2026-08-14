@@ -137,15 +137,15 @@ redirect_from:
 
 <div class="intro-block">
   <p>
-    I am a <strong>Postdoctoral Associate at the University of Georgia</strong>. I received my Ph.D. in Culture Technology from <strong>KAIST</strong> in August 2026, where I conducted research in the Ubiquitous Virtual Reality Lab. My research specializes in <strong>avatar-mediated communication</strong> and <strong>empathic computing</strong> for AR/VR, investigating how people perceive and communicate through avatars and how we can design socially effective avatar behaviors—especially in asynchronous and mediated XR scenarios.
+    My research explores <strong>Human–Agent Interaction in XR</strong>, focusing on a future in which people create AI agents that represent and communicate on their behalf in immersive environments. I develop new communication frameworks for these human-representative agents, particularly in mediated and asynchronous interactions where users may not be physically present or available in real time. Ultimately, I aim to contribute to future communication technologies that are more personalized, accessible, and socially effective, while ensuring that users retain agency and trust in how they are represented.
   </p>
 
   <div class="tags">
-    <span class="tag">XR / HCI</span>
-    <span class="tag">Avatars</span>
-    <span class="tag">Social Presence</span>
-    <span class="tag">Communication</span>
-    <span class="tag">Embodiment</span>
+    <span class="tag">Human–Agent Interaction</span>
+    <span class="tag">XR</span>
+    <span class="tag">Avatars &amp; Agents</span>
+    <span class="tag">Social Communication</span>
+    <span class="tag">Human Agency</span>
   </div>
 </div>
 
@@ -208,24 +208,24 @@ redirect_from:
   <h2>🔍 Research Snapshot</h2>
   
   <div class="intro-block">
-    <p><strong>Theme:</strong> Understanding and designing human communication in immersive XR.</p>
+    <p><strong>Theme:</strong> Designing human-centered communication between people and their representative agents in XR.</p>
 
     <p>
-      My research lies at the intersection of <strong>human–computer interaction</strong>, <strong>immersive XR systems</strong>, and <strong>empathic computing</strong>. I study how people <em>perceive</em>, <em>interpret</em>, and <em>trust</em> digital representations of others.
+      My research lies at the intersection of <strong>human–computer interaction</strong>, <strong>XR</strong>, and <strong>social AI</strong>. I investigate how human-representative agents can convey users’ identities, intentions, emotions, and communication styles while adapting to different social contexts.
     </p>
 
     <ul class="research-points">
       <li>
-        <strong>Avatar-mediated communication:</strong> Investigating nonverbal cues and their impact on communication and social presence.
+        <strong>Human-representative agents:</strong> Exploring how avatars and AI agents can represent and communicate on behalf of people.
       </li>
       <li>
-        <strong>Human perception in XR:</strong> Examining identity, agency, and trust when interacting with virtual representations.
+        <strong>Agent-mediated communication:</strong> Developing new frameworks for mediated and asynchronous interaction across time and space.
       </li>
       <li>
-        <strong>Interaction design:</strong> Developing expressive and context-aware avatar behaviors for diverse communication tasks.
+        <strong>Adaptive social behavior:</strong> Designing personalized and context-aware verbal and nonverbal agent behaviors.
       </li>
       <li>
-        <strong>Evaluation:</strong> Conducting mixed-method user studies to assess behavioral and experiential outcomes in XR.
+        <strong>Human-centered evaluation:</strong> Examining social presence, identity, agency, authenticity, and trust through mixed-method user studies.
       </li>
     </ul>
   </div>
