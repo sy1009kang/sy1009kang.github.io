@@ -137,7 +137,7 @@ redirect_from:
 
 <div class="intro-block">
   <p>
-    My research explores <strong>Human–Agent Interaction in XR</strong>, focusing on a future in which people create AI agents that represent and communicate on their behalf in immersive environments. I develop new communication frameworks for these human-representative agents, particularly in mediated and asynchronous interactions where users may not be physically present or available in real time. Ultimately, I aim to contribute to future communication technologies that are more personalized, accessible, and socially effective, while ensuring that users retain agency and trust in how they are represented.
+    My research explores <strong>Human–Agent Interaction in XR</strong>, exploring how people communicate and interact through avatars and AI agents in immersive environments. I am particularly interested in how these technologies shape social interactions, influence communication experiences, and introduce new opportunities and challenges for human communication. Ultimately, I aim to develop human-centered communication frameworks that make emerging communication technologies more accessible, understandable, and socially acceptable, supporting their meaningful adoption.
   </p>
 
   <div class="tags">
