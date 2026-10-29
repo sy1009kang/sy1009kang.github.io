@@ -142,9 +142,9 @@ redirect_from:
 
   <div class="tags">
     <span class="tag">Human–Agent Interaction</span>
-    <span class="tag">XR</span>
+    <span class="tag">AR/VR/XR</span>
     <span class="tag">Avatars &amp; Agents</span>
-    <span class="tag">Social Communication</span>
+    <span class="tag">AI-mediated Communication</span>
   </div>
 </div>
 
