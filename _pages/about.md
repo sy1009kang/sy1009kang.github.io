@@ -137,7 +137,7 @@ redirect_from:
 
 <div class="intro-block">
   <p>
-    My research explores <strong>Human–Agent Interaction in XR</strong>, exploring how people communicate and interact through avatars and AI agents in immersive environments. I am particularly interested in how these technologies shape social interactions, influence communication experiences, and introduce new opportunities and challenges for human communication. Ultimately, I aim to develop human-centered communication frameworks that make emerging communication technologies more accessible, understandable, and socially acceptable, supporting their meaningful adoption.
+    My research explores <strong>AI-mediated communication in XR</strong>, exploring how people communicate and interact through avatars and AI agents in immersive environments. I am particularly interested in how these technologies shape social interactions, influence communication experiences, and introduce new opportunities and challenges for human communication. Ultimately, I aim to develop human-centered communication frameworks that make emerging communication technologies more accessible, understandable, and socially acceptable, supporting their meaningful adoption.
   </p>
 
   <div class="tags">
