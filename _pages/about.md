@@ -145,7 +145,6 @@ redirect_from:
     <span class="tag">XR</span>
     <span class="tag">Avatars &amp; Agents</span>
     <span class="tag">Social Communication</span>
-    <span class="tag">Human Agency</span>
   </div>
 </div>
 
